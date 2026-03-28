@@ -1,0 +1,98 @@
+name: Biosimilar ASP Monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: '실행 이유 (선택)'
+        required: false
+        default: '수동 실행'
+
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas openpyxl xlrd matplotlib
+
+      - name: Check CMS for new files
+        id: cms_check
+        run: |
+          python << 'PYEOF'
+          import requests, re, os
+
+          event = os.environ.get("GITHUB_EVENT_NAME", "")
+          if event == "workflow_dispatch":
+              print("수동 실행 — CMS 체크 건너뜀")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("should_run=true\n")
+              exit(0)
+
+          try:
+              resp = requests.get(
+                  "https://www.cms.gov/medicare/payment/part-b-drugs/asp-pricing-files",
+                  timeout=30, headers={"User-Agent": "Mozilla/5.0"}
+              )
+              content = resp.text
+              pattern = r'(january|april|july|october)-2\d{3}-(?:medicare-part-b-payment-limit|asp-pricing)[^"]*\.zip'
+              matches = re.findall(pattern, content, re.IGNORECASE)
+
+              last_file = ""
+              try:
+                  with open("last_cms_file.txt", "r") as f:
+                      last_file = f.read().strip()
+              except FileNotFoundError:
+                  pass
+
+              latest = matches[0] if matches else ""
+              should_run = latest != last_file
+
+              print(f"마지막 파일: {last_file}")
+              print(f"현재 파일:   {latest}")
+              print(f"실행 여부:   {should_run}")
+
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write(f"should_run={'true' if should_run else 'false'}\n")
+                  f.write(f"latest_file={latest}\n")
+
+          except Exception as e:
+              print(f"CMS 체크 실패: {e} — 안전하게 실행")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("should_run=true\n")
+          PYEOF
+
+      - name: Run ASP Monitor
+        if: steps.cms_check.outputs.should_run == 'true'
+        env:
+          GMAIL_SENDER:       ${{ secrets.GMAIL_SENDER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_RECIPIENTS:   ${{ secrets.GMAIL_RECIPIENTS }}
+        run: python asp_monitor.py
+
+      - name: Save last CMS file record
+        if: steps.cms_check.outputs.should_run == 'true'
+        run: |
+          echo "${{ steps.cms_check.outputs.latest_file }}" > last_cms_file.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add last_cms_file.txt
+          git diff --staged --quiet || git commit -m "Update last CMS file record"
+          git push
+
+      - name: Skip notification
+        if: steps.cms_check.outputs.should_run == 'false'
+        run: echo "CMS 새 파일 없음 — 이번 주 실행 건너뜀"
