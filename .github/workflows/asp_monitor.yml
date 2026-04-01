@@ -83,16 +83,27 @@ jobs:
           GMAIL_RECIPIENTS:   ${{ secrets.GMAIL_RECIPIENTS }}
         run: python asp_monitor.py
 
-      - name: Save last CMS file record
+      - name: Save outputs to repository
         if: steps.cms_check.outputs.should_run == 'true'
         run: |
-          echo "${{ steps.cms_check.outputs.latest_file }}" > last_cms_file.txt
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "${{ steps.cms_check.outputs.latest_file }}" > last_cms_file.txt
           git add last_cms_file.txt
-          git add data/asp_data.csv
-          git diff --staged --quiet || git commit -m "Update last CMS file record"
+          git add data/asp_data.csv || true
+          git diff --staged --quiet || git commit -m "Update ASP data"
           git push
+
+      - name: Force save CSV on manual run
+        if: steps.cms_check.outputs.should_run == 'false'
+        run: |
+          if [ -f data/asp_data.csv ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/asp_data.csv
+            git diff --staged --quiet || git commit -m "Update ASP data CSV"
+            git push
+          fi
 
       - name: Skip notification
         if: steps.cms_check.outputs.should_run == 'false'
