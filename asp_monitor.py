@@ -864,35 +864,33 @@ def main():
     html = build_email_html(asp_data, chart_cids, validation, new_codes, all_diag)
     send_email(html, charts)
 
+    send_email(html, charts)      # main() 마지막 줄
+
+    # CSV 저장 (GitHub Pages용)
+    import csv, os
+    os.makedirs("data", exist_ok=True)
+    rows = []
+    for mol_name, mol_data in asp_data.items():
+        for prod in mol_data["products"]:
+            for i, r in enumerate(prod["asp_results"]):
+                if r is not None:
+                    rows.append({
+                        "quarter":    mol_data["quarters"][i],
+                        "molecule":   mol_name,
+                        "brand":      prod["brand"],
+                        "company":    prod["company"],
+                        "is_sb":      prod["is_sb"],
+                        "is_orig":    prod["is_originator"],
+                        "asp":        round(r["asp"] * prod["mult"], 2),
+                        "addon_pct":  r["addon_pct"],
+                        "ira":        r.get("ira_qualifying", False),
+                        "hcpcs":      r.get("hcpcs", ""),
+                    })
+    with open("data/asp_data.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+        writer.writeheader()
+        writer.writerows(rows)
+    print("✅ data/asp_data.csv 저장 완료")
 
 if __name__ == "__main__":
     main()
-
-# CSV 저장 (GitHub Pages용)
-import csv, os
-
-os.makedirs("data", exist_ok=True)
-rows = []
-for mol_name, mol_data in asp_data.items():
-    for prod in mol_data["products"]:
-        for i, r in enumerate(prod["asp_results"]):
-            if r is not None:
-                rows.append({
-                    "quarter":    mol_data["quarters"][i],
-                    "molecule":   mol_name,
-                    "brand":      prod["brand"],
-                    "company":    prod["company"],
-                    "is_sb":      prod["is_sb"],
-                    "is_orig":    prod["is_originator"],
-                    "asp":        round(r["asp"] * prod["mult"], 2),
-                    "addon_pct":  r["addon_pct"],
-                    "ira":        r.get("ira_qualifying", False),
-                    "hcpcs":      r.get("hcpcs", ""),
-                })
-
-with open("data/asp_data.csv", "w", newline="", encoding="utf-8") as f:
-    writer = csv.DictWriter(f, fieldnames=rows[0].keys())
-    writer.writeheader()
-    writer.writerows(rows)
-
-print("✅ data/asp_data.csv 저장 완료")
