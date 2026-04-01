@@ -470,6 +470,8 @@ def main():
     print(f"✅ CSV 로드 중...")
     df = pd.read_csv(csv_path, dtype={"is_sb": str, "ira_qualifying": str})
     df["is_sb"]          = df["is_sb"].map({"True":True,"False":False}).fillna(False)
+    if "ira" in df.columns and "ira_qualifying" not in df.columns:
+        df = df.rename(columns={"ira": "ira_qualifying"})
     df["ira_qualifying"] = df["ira_qualifying"].map({"True":True,"False":False}).fillna(False)
     df["asp_per_unit"]   = pd.to_numeric(df["asp_per_unit"], errors="coerce")
     df["payment_limit"]  = pd.to_numeric(df["payment_limit"], errors="coerce")
