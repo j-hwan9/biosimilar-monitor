@@ -83,6 +83,14 @@ jobs:
           GMAIL_RECIPIENTS:   ${{ secrets.GMAIL_RECIPIENTS }}
         run: python asp_monitor.py
 
+      - name: Generate Excel Report
+        if: steps.cms_check.outputs.should_run == 'true'
+        env:
+          GMAIL_SENDER:       ${{ secrets.GMAIL_SENDER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_RECIPIENTS:   ${{ secrets.GMAIL_RECIPIENTS }}
+        run: python generate_report.py  
+
       - name: Save outputs to repository
         if: steps.cms_check.outputs.should_run == 'true'
         run: |
@@ -91,6 +99,7 @@ jobs:
           echo "${{ steps.cms_check.outputs.latest_file }}" > last_cms_file.txt
           git add last_cms_file.txt
           git add data/asp_data.csv || true
+          git add data/asp_report.xlsx || true
           git diff --staged --quiet || git commit -m "Update ASP data"
           git push
 
