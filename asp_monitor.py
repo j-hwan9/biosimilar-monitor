@@ -530,31 +530,16 @@ def calc_asp(brand: str, mol_info: dict, brand_data: dict) -> dict | None:
 # 4. 데이터 수집
 # ============================================================
 def collect_asp_data(validation: dict) -> tuple:
-    from concurrent.futures import ThreadPoolExecutor, as_completed
-
-    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱 (병렬 처리)")
+    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱")
     all_diag = []
-    quarters = get_all_quarters()
+    quarter_brand_data = []
 
-    # 병렬 다운로드
-    quarter_brand_data = [{}] * len(quarters)
-
-    def fetch_one(args):
-        idx, q = args
+    for q in quarters:
         bd, diag = download_and_parse(q)
-        return idx, bd, diag
-
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = {executor.submit(fetch_one, (i, q)): i
-                   for i, q in enumerate(quarters)}
-        completed = 0
-        for future in as_completed(futures):
-            idx, bd, diag = future.result()
-            quarter_brand_data[idx] = bd
-            all_diag.extend(diag)
-            completed += 1
-            ok = "✅" if bd else "❌"
-            print(f"  {ok} [{completed:2d}/{len(quarters)}] {quarters[idx]['label']}: {len(bd)}개 제품 매핑")
+        quarter_brand_data.append(bd)
+        all_diag.extend(diag)
+        ok = "✅" if bd else "❌"
+        print(f"  {ok} {q['label']}: {len(bd)}개 제품 매핑")
 
     quarter_labels = [q["label"] for q in quarters]
     result = {}
@@ -598,7 +583,6 @@ def collect_asp_data(validation: dict) -> tuple:
         }
 
     return result, all_diag
-
 # ============================================================
 # 5. 그래프 (과거→현재, 선 끝 라벨)
 # ============================================================
