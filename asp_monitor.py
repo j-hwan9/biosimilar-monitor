@@ -60,23 +60,75 @@ EMAIL_CONFIG = {
     "recipients":  ["jhwang1637@gmail.com"],
 }
 
-# 최신 12개 분기 (과거→현재)
-QUARTERS = [
-    {"label": "2023 Q3 (Jul)", "url": "https://www.cms.gov/files/zip/july-2023-asp-pricing-file.zip"},
-    {"label": "2023 Q4 (Oct)", "url": "https://www.cms.gov/files/zip/october-2023-asp-pricing-file.zip"},
-    {"label": "2024 Q1 (Jan)", "url": "https://www.cms.gov/files/zip/january-2024-asp-pricing-file.zip"},
-    {"label": "2024 Q2 (Apr)", "url": "https://www.cms.gov/files/zip/april-2024-asp-pricing-file.zip"},
-    {"label": "2024 Q3 (Jul)", "url": "https://www.cms.gov/files/zip/july-2024-asp-pricing-file.zip"},
-    {"label": "2024 Q4 (Oct)", "url": "https://www.cms.gov/files/zip/october-2024-asp-pricing-file.zip"},
-    {"label": "2025 Q1 (Jan)", "url": "https://www.cms.gov/files/zip/january-2025-asp-pricing-file-03/11/25-final-file.zip"},
-    {"label": "2025 Q2 (Apr)", "url": "https://www.cms.gov/files/zip/april-2025-asp-pricing-file.zip"},
+def get_all_quarters() -> list:
+    """CMS 페이지에서 모든 ASP 파일 URL 자동 수집"""
+    import re
+    quarters = []
+    
+    try:
+        resp = requests.get(
+            "https://www.cms.gov/medicare/payment/part-b-drugs/asp-pricing-files",
+            timeout=30, headers={"User-Agent": "Mozilla/5.0"}
+        )
+        content = resp.text
+        
+        # ZIP 링크 패턴 매칭
+        pattern = r'href="(/files/zip/([^"]*(?:asp-pricing|payment-limit)[^"]*\.zip))"'
+        matches = re.findall(pattern, content, re.IGNORECASE)
+        
+        month_map = {
+            "january":"Q1 (Jan)", "april":"Q2 (Apr)",
+            "july":"Q3 (Jul)",    "october":"Q4 (Oct)"
+        }
+        
+        seen = set()
+        for path, filename in matches:
+            fname = filename.lower()
+            # NOC, crosswalk 제외
+            if any(x in fname for x in ["noc","crosswalk","payable"]):
+                continue
+            
+            # 연도/분기 추출
+            year_match  = re.search(r'(20\d{2})', fname)
+            month_match = re.search(r'(january|april|july|october)', fname)
+            
+            if not year_match or not month_match:
+                continue
+            
+            year  = year_match.group(1)
+            month = month_match.group(1)
+            label = f"{year} {month_map[month]}"
+            
+            if label in seen:
+                continue
+            seen.add(label)
+            
+            quarters.append({
+                "label": label,
+                "url":   f"https://www.cms.gov{path}"
+            })
+        
+        # 날짜순 정렬
+        qorder = {"Q1 (Jan)":1, "Q2 (Apr)":2, "Q3 (Jul)":3, "Q4 (Oct)":4}
+        quarters.sort(key=lambda x: (
+            int(x["label"].split()[0]),
+            qorder.get(x["label"].split(" ",1)[1], 0)
+        ))
+        
+        print(f"  -> CMS에서 {len(quarters)}개 분기 자동 감지")
+        return quarters
+        
+    except Exception as e:
+        print(f"  !! CMS 페이지 스캔 실패: {e} — 하드코딩 URL 사용")
+        return QUARTERS_FALLBACK
+
+# 스캔 실패 시 최근 4개 분기 fallback
+QUARTERS_FALLBACK = [
     {"label": "2025 Q3 (Jul)", "url": "https://www.cms.gov/files/zip/july-2025-asp-pricing-file.zip"},
     {"label": "2025 Q4 (Oct)", "url": "https://www.cms.gov/files/zip/october-2025-asp-pricing-final-file.zip"},
     {"label": "2026 Q1 (Jan)", "url": "https://www.cms.gov/files/zip/january-2026-medicare-part-b-payment-limit-files.zip"},
     {"label": "2026 Q2 (Apr)", "url": "https://www.cms.gov/files/zip/april-2026-medicare-part-b-payment-limit-files-03-19-2026-final-file.zip"},
 ]
-
-CROSSWALK_URL = "https://www.cms.gov/files/zip/april-2026-ndc-hcpcs-crosswalk-03-19-2026-final-file.zip"
 
 # ============================================================
 # 제품 DB
@@ -482,7 +534,8 @@ def collect_asp_data(validation: dict) -> tuple:
     all_diag = []
     quarter_brand_data = []
 
-    for q in QUARTERS:
+    quarters = get_all_quarters()
+    for q in quarters:
         bd, diag = download_and_parse(q)
         quarter_brand_data.append(bd)
         all_diag.extend(diag)
