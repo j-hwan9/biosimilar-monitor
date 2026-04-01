@@ -530,12 +530,13 @@ def calc_asp(brand: str, mol_info: dict, brand_data: dict) -> dict | None:
 # 4. 데이터 수집
 # ============================================================
 def collect_asp_data(validation: dict) -> tuple:
-    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱 (최대 12개 분기)")
+    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱")
     all_diag = []
     quarter_brand_data = []
 
-    quarters = get_all_quarters()
-    for q in quarters:
+    quarters = get_all_quarters()   # ← 이렇게 변경
+
+    for q in quarters:   # ← QUARTERS → quarters
         bd, diag = download_and_parse(q)
         quarter_brand_data.append(bd)
         all_diag.extend(diag)
