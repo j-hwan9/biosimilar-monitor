@@ -530,18 +530,31 @@ def calc_asp(brand: str, mol_info: dict, brand_data: dict) -> dict | None:
 # 4. 데이터 수집
 # ============================================================
 def collect_asp_data(validation: dict) -> tuple:
-    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱")
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    print("\n[2/4] CMS ASP 파일 다운로드 및 파싱 (병렬 처리)")
     all_diag = []
-    quarter_brand_data = []
+    quarters = get_all_quarters()
 
-    quarters = get_all_quarters()   # ← 이렇게 변경
+    # 병렬 다운로드
+    quarter_brand_data = [{}] * len(quarters)
 
-    for q in quarters:   # ← QUARTERS → quarters
+    def fetch_one(args):
+        idx, q = args
         bd, diag = download_and_parse(q)
-        quarter_brand_data.append(bd)
-        all_diag.extend(diag)
-        ok = "✅" if bd else "❌"
-        print(f"  {ok} {q['label']}: {len(bd)}개 제품 매핑")
+        return idx, bd, diag
+
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(fetch_one, (i, q)): i
+                   for i, q in enumerate(quarters)}
+        completed = 0
+        for future in as_completed(futures):
+            idx, bd, diag = future.result()
+            quarter_brand_data[idx] = bd
+            all_diag.extend(diag)
+            completed += 1
+            ok = "✅" if bd else "❌"
+            print(f"  {ok} [{completed:2d}/{len(quarters)}] {quarters[idx]['label']}: {len(bd)}개 제품 매핑")
 
     quarter_labels = [q["label"] for q in quarters]
     result = {}
@@ -551,7 +564,8 @@ def collect_asp_data(validation: dict) -> tuple:
         mult = mol_info["display_mult"]
         products = []
 
-        orig_results = [calc_asp(orig["brand"], mol_info, bd) for bd in quarter_brand_data]
+        orig_results = [calc_asp(orig["brand"], mol_info, bd)
+                        for bd in quarter_brand_data]
         products.append({
             "brand": orig["brand"], "company": orig["company"],
             "suffix": orig["hcpcs_fixed"],
@@ -563,9 +577,9 @@ def collect_asp_data(validation: dict) -> tuple:
         for bs in mol_info["biosimilars"]:
             fda_st = validation.get(bs["brand"], {}).get("status", "unknown")
             if fda_st == "discontinued":
-                print(f"  [제외] {bs['brand']} — FDA: discontinued")
                 continue
-            bs_results = [calc_asp(bs["brand"], mol_info, bd) for bd in quarter_brand_data]
+            bs_results = [calc_asp(bs["brand"], mol_info, bd)
+                          for bd in quarter_brand_data]
             if any(r is not None for r in bs_results):
                 products.append({
                     "brand": bs["brand"], "company": bs["company"],
@@ -584,7 +598,6 @@ def collect_asp_data(validation: dict) -> tuple:
         }
 
     return result, all_diag
-
 
 # ============================================================
 # 5. 그래프 (과거→현재, 선 끝 라벨)
