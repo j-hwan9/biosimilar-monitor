@@ -1,4 +1,14 @@
 quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
+2021 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,423.6,6,False,J1745
+2021 Q2 (Apr),Infliximab,Remicade,J&J (Janssen),False,True,395.77,6,False,J1745
+2021 Q3 (Jul),Infliximab,Remicade,J&J (Janssen),False,True,389.8,6,False,J1745
+2021 Q4 (Oct),Infliximab,Remicade,J&J (Janssen),False,True,372.94,6,False,J1745
+2022 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,355.49,6,False,J1745
+2022 Q2 (Apr),Infliximab,Remicade,J&J (Janssen),False,True,344.46,6,False,J1745
+2022 Q3 (Jul),Infliximab,Remicade,J&J (Janssen),False,True,336.92,6,False,J1745
+2022 Q4 (Oct),Infliximab,Remicade,J&J (Janssen),False,True,330.4,6,False,J1745
+2023 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,328.89,6,False,J1745
+2023 Q2 (Apr),Infliximab,Remicade,J&J (Janssen),False,True,321.16,6,False,J1745
 2023 Q3 (Jul),Infliximab,Remicade,J&J (Janssen),False,True,310.44,6,False,J1745
 2023 Q4 (Oct),Infliximab,Remicade,J&J (Janssen),False,True,307.9,6,False,J1745
 2024 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,303.41,6,False,J1745
@@ -6,11 +16,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Infliximab,Remicade,J&J (Janssen),False,True,299.12,6,False,J1745
 2024 Q4 (Oct),Infliximab,Remicade,J&J (Janssen),False,True,303.99,6,False,J1745
 2025 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,287.97,6,False,J1745
-2025 Q2 (Apr),Infliximab,Remicade,J&J (Janssen),False,True,287.95,6,False,J1745
 2025 Q3 (Jul),Infliximab,Remicade,J&J (Janssen),False,True,294.14,6,False,J1745
 2025 Q4 (Oct),Infliximab,Remicade,J&J (Janssen),False,True,293.3,6,False,J1745
 2026 Q1 (Jan),Infliximab,Remicade,J&J (Janssen),False,True,305.88,6,False,J1745
 2026 Q2 (Apr),Infliximab,Remicade,J&J (Janssen),False,True,292.84,6,False,J1745
+2021 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,386.97,8,True,Q5104
+2021 Q2 (Apr),Infliximab,Renflexis,Samsung Bioepis,True,False,377.09,8,True,Q5104
+2021 Q3 (Jul),Infliximab,Renflexis,Samsung Bioepis,True,False,364.39,8,True,Q5104
+2021 Q4 (Oct),Infliximab,Renflexis,Samsung Bioepis,True,False,358.08,8,True,Q5104
+2022 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,374.51,6,False,Q5104
+2022 Q2 (Apr),Infliximab,Renflexis,Samsung Bioepis,True,False,590.28,6,False,Q5104
+2022 Q3 (Jul),Infliximab,Renflexis,Samsung Bioepis,True,False,492.32,6,False,Q5104
+2022 Q4 (Oct),Infliximab,Renflexis,Samsung Bioepis,True,False,466.67,6,False,Q5104
+2023 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,434.98,6,False,Q5104
+2023 Q2 (Apr),Infliximab,Renflexis,Samsung Bioepis,True,False,345.03,6,False,Q5104
 2023 Q3 (Jul),Infliximab,Renflexis,Samsung Bioepis,True,False,336.84,6,False,Q5104
 2023 Q4 (Oct),Infliximab,Renflexis,Samsung Bioepis,True,False,300.99,8,True,Q5104
 2024 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,290.72,8,True,Q5104
@@ -18,11 +37,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Infliximab,Renflexis,Samsung Bioepis,True,False,275.18,8,True,Q5104
 2024 Q4 (Oct),Infliximab,Renflexis,Samsung Bioepis,True,False,247.5,8,True,Q5104
 2025 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,239.59,8,True,Q5104
-2025 Q2 (Apr),Infliximab,Renflexis,Samsung Bioepis,True,False,255.41,8,True,Q5104
 2025 Q3 (Jul),Infliximab,Renflexis,Samsung Bioepis,True,False,227.0,8,True,Q5104
 2025 Q4 (Oct),Infliximab,Renflexis,Samsung Bioepis,True,False,246.53,8,True,Q5104
 2026 Q1 (Jan),Infliximab,Renflexis,Samsung Bioepis,True,False,253.07,8,True,Q5104
 2026 Q2 (Apr),Infliximab,Renflexis,Samsung Bioepis,True,False,244.6,8,True,Q5104
+2021 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,396.7,8,True,Q5103
+2021 Q2 (Apr),Infliximab,Inflectra,Pfizer/Celltrion,False,False,374.45,8,True,Q5103
+2021 Q3 (Jul),Infliximab,Inflectra,Pfizer/Celltrion,False,False,369.34,8,True,Q5103
+2021 Q4 (Oct),Infliximab,Inflectra,Pfizer/Celltrion,False,False,389.5,6,False,Q5103
+2022 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,384.41,6,False,Q5103
+2022 Q2 (Apr),Infliximab,Inflectra,Pfizer/Celltrion,False,False,366.15,6,False,Q5103
+2022 Q3 (Jul),Infliximab,Inflectra,Pfizer/Celltrion,False,False,305.62,8,True,Q5103
+2022 Q4 (Oct),Infliximab,Inflectra,Pfizer/Celltrion,False,False,283.02,8,True,Q5103
+2023 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,217.86,8,True,Q5103
+2023 Q2 (Apr),Infliximab,Inflectra,Pfizer/Celltrion,False,False,174.14,8,True,Q5103
 2023 Q3 (Jul),Infliximab,Inflectra,Pfizer/Celltrion,False,False,150.97,8,True,Q5103
 2023 Q4 (Oct),Infliximab,Inflectra,Pfizer/Celltrion,False,False,114.68,8,True,Q5103
 2024 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,118.67,8,True,Q5103
@@ -30,11 +58,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Infliximab,Inflectra,Pfizer/Celltrion,False,False,82.7,8,True,Q5103
 2024 Q4 (Oct),Infliximab,Inflectra,Pfizer/Celltrion,False,False,111.86,8,True,Q5103
 2025 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,92.46,8,True,Q5103
-2025 Q2 (Apr),Infliximab,Inflectra,Pfizer/Celltrion,False,False,136.08,8,True,Q5103
 2025 Q3 (Jul),Infliximab,Inflectra,Pfizer/Celltrion,False,False,173.26,8,True,Q5103
 2025 Q4 (Oct),Infliximab,Inflectra,Pfizer/Celltrion,False,False,176.44,8,True,Q5103
 2026 Q1 (Jan),Infliximab,Inflectra,Pfizer/Celltrion,False,False,217.73,8,True,Q5103
 2026 Q2 (Apr),Infliximab,Inflectra,Pfizer/Celltrion,False,False,236.92,8,True,Q5103
+2021 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,489.58,6,False,Q5121
+2021 Q2 (Apr),Infliximab,Avsola,Amgen,False,False,476.86,6,False,Q5121
+2021 Q3 (Jul),Infliximab,Avsola,Amgen,False,False,468.13,6,False,Q5121
+2021 Q4 (Oct),Infliximab,Avsola,Amgen,False,False,448.79,6,False,Q5121
+2022 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,431.71,6,False,Q5121
+2022 Q2 (Apr),Infliximab,Avsola,Amgen,False,False,412.23,6,False,Q5121
+2022 Q3 (Jul),Infliximab,Avsola,Amgen,False,False,366.28,6,False,Q5121
+2022 Q4 (Oct),Infliximab,Avsola,Amgen,False,False,344.37,6,False,Q5121
+2023 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,308.71,8,True,Q5121
+2023 Q2 (Apr),Infliximab,Avsola,Amgen,False,False,258.9,8,True,Q5121
 2023 Q3 (Jul),Infliximab,Avsola,Amgen,False,False,258.5,8,True,Q5121
 2023 Q4 (Oct),Infliximab,Avsola,Amgen,False,False,240.05,8,True,Q5121
 2024 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,231.28,8,True,Q5121
@@ -42,12 +79,21 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Infliximab,Avsola,Amgen,False,False,194.96,8,True,Q5121
 2024 Q4 (Oct),Infliximab,Avsola,Amgen,False,False,188.58,8,True,Q5121
 2025 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,175.21,8,True,Q5121
-2025 Q2 (Apr),Infliximab,Avsola,Amgen,False,False,174.45,8,True,Q5121
 2025 Q3 (Jul),Infliximab,Avsola,Amgen,False,False,185.33,8,True,Q5121
 2025 Q4 (Oct),Infliximab,Avsola,Amgen,False,False,180.59,8,True,Q5121
 2026 Q1 (Jan),Infliximab,Avsola,Amgen,False,False,213.64,8,True,Q5121
 2026 Q2 (Apr),Infliximab,Avsola,Amgen,False,False,256.97,8,True,Q5121
 2025 Q1 (Jan),Infliximab,Zymfentra,Celltrion,False,False,2594.98,6,False,J1748
+2021 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,1522.89,6,False,J2778
+2021 Q2 (Apr),Ranibizumab,Lucentis,Genentech (Roche),False,True,1472.94,6,False,J2778
+2021 Q3 (Jul),Ranibizumab,Lucentis,Genentech (Roche),False,True,1447.77,6,False,J2778
+2021 Q4 (Oct),Ranibizumab,Lucentis,Genentech (Roche),False,True,1502.23,6,False,J2778
+2022 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,1449.05,6,False,J2778
+2022 Q2 (Apr),Ranibizumab,Lucentis,Genentech (Roche),False,True,1329.63,6,False,J2778
+2022 Q3 (Jul),Ranibizumab,Lucentis,Genentech (Roche),False,True,1297.83,6,False,J2778
+2022 Q4 (Oct),Ranibizumab,Lucentis,Genentech (Roche),False,True,1218.91,6,False,J2778
+2023 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,1118.84,6,False,J2778
+2023 Q2 (Apr),Ranibizumab,Lucentis,Genentech (Roche),False,True,1168.17,6,False,J2778
 2023 Q3 (Jul),Ranibizumab,Lucentis,Genentech (Roche),False,True,1115.96,6,False,J2778
 2023 Q4 (Oct),Ranibizumab,Lucentis,Genentech (Roche),False,True,931.0,6,False,J2778
 2024 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,884.68,6,False,J2778
@@ -55,11 +101,12 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Ranibizumab,Lucentis,Genentech (Roche),False,True,649.18,6,False,J2778
 2024 Q4 (Oct),Ranibizumab,Lucentis,Genentech (Roche),False,True,646.87,6,False,J2778
 2025 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,584.81,6,False,J2778
-2025 Q2 (Apr),Ranibizumab,Lucentis,Genentech (Roche),False,True,426.48,6,False,J2778
 2025 Q3 (Jul),Ranibizumab,Lucentis,Genentech (Roche),False,True,429.77,6,False,J2778
 2025 Q4 (Oct),Ranibizumab,Lucentis,Genentech (Roche),False,True,407.47,6,False,J2778
 2026 Q1 (Jan),Ranibizumab,Lucentis,Genentech (Roche),False,True,308.69,6,False,J2778
 2026 Q2 (Apr),Ranibizumab,Lucentis,Genentech (Roche),False,True,320.06,6,False,J2778
+2023 Q1 (Jan),Ranibizumab,Byooviz,Samsung Bioepis,True,False,1090.24,8,True,Q5124
+2023 Q2 (Apr),Ranibizumab,Byooviz,Samsung Bioepis,True,False,1022.39,8,True,Q5124
 2023 Q3 (Jul),Ranibizumab,Byooviz,Samsung Bioepis,True,False,1014.86,8,True,Q5124
 2023 Q4 (Oct),Ranibizumab,Byooviz,Samsung Bioepis,True,False,941.9,6,False,Q5124
 2024 Q1 (Jan),Ranibizumab,Byooviz,Samsung Bioepis,True,False,866.78,8,True,Q5124
@@ -67,7 +114,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Ranibizumab,Byooviz,Samsung Bioepis,True,False,749.61,6,False,Q5124
 2024 Q4 (Oct),Ranibizumab,Byooviz,Samsung Bioepis,True,False,815.18,6,False,Q5124
 2025 Q1 (Jan),Ranibizumab,Byooviz,Samsung Bioepis,True,False,810.91,6,False,Q5124
-2025 Q2 (Apr),Ranibizumab,Byooviz,Samsung Bioepis,True,False,393.73,8,True,Q5124
 2025 Q3 (Jul),Ranibizumab,Byooviz,Samsung Bioepis,True,False,276.38,8,True,Q5124
 2025 Q4 (Oct),Ranibizumab,Byooviz,Samsung Bioepis,True,False,276.38,8,True,Q5124
 2026 Q1 (Jan),Ranibizumab,Byooviz,Samsung Bioepis,True,False,276.38,8,True,Q5124
@@ -79,11 +125,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Ranibizumab,Cimerli,Coherus,False,False,983.88,6,False,Q5128
 2024 Q4 (Oct),Ranibizumab,Cimerli,Coherus,False,False,966.24,6,False,Q5128
 2025 Q1 (Jan),Ranibizumab,Cimerli,Coherus,False,False,808.63,6,False,Q5128
-2025 Q2 (Apr),Ranibizumab,Cimerli,Coherus,False,False,708.22,6,False,Q5128
 2025 Q3 (Jul),Ranibizumab,Cimerli,Coherus,False,False,398.18,8,True,Q5128
 2025 Q4 (Oct),Ranibizumab,Cimerli,Coherus,False,False,398.18,8,True,Q5128
 2026 Q1 (Jan),Ranibizumab,Cimerli,Coherus,False,False,398.18,6,False,Q5128
 2026 Q2 (Apr),Ranibizumab,Cimerli,Coherus,False,False,398.18,6,False,Q5128
+2021 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,3981.8,6,False,J9355
+2021 Q2 (Apr),Trastuzumab,Herceptin,Genentech (Roche),False,True,3711.89,6,False,J9355
+2021 Q3 (Jul),Trastuzumab,Herceptin,Genentech (Roche),False,True,3604.71,6,False,J9355
+2021 Q4 (Oct),Trastuzumab,Herceptin,Genentech (Roche),False,True,3558.55,6,False,J9355
+2022 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,3423.79,6,False,J9355
+2022 Q2 (Apr),Trastuzumab,Herceptin,Genentech (Roche),False,True,3510.45,6,False,J9355
+2022 Q3 (Jul),Trastuzumab,Herceptin,Genentech (Roche),False,True,3431.6,6,False,J9355
+2022 Q4 (Oct),Trastuzumab,Herceptin,Genentech (Roche),False,True,3344.19,6,False,J9355
+2023 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,3278.5,6,False,J9355
+2023 Q2 (Apr),Trastuzumab,Herceptin,Genentech (Roche),False,True,3179.68,6,False,J9355
 2023 Q3 (Jul),Trastuzumab,Herceptin,Genentech (Roche),False,True,3212.56,6,False,J9355
 2023 Q4 (Oct),Trastuzumab,Herceptin,Genentech (Roche),False,True,3200.92,6,False,J9355
 2024 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,3188.24,6,False,J9355
@@ -91,11 +146,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Herceptin,Genentech (Roche),False,True,3093.82,6,False,J9355
 2024 Q4 (Oct),Trastuzumab,Herceptin,Genentech (Roche),False,True,3088.19,6,False,J9355
 2025 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,3052.96,6,False,J9355
-2025 Q2 (Apr),Trastuzumab,Herceptin,Genentech (Roche),False,True,2999.12,6,False,J9355
 2025 Q3 (Jul),Trastuzumab,Herceptin,Genentech (Roche),False,True,3018.49,6,False,J9355
 2025 Q4 (Oct),Trastuzumab,Herceptin,Genentech (Roche),False,True,2972.69,6,False,J9355
 2026 Q1 (Jan),Trastuzumab,Herceptin,Genentech (Roche),False,True,2911.59,6,False,J9355
 2026 Q2 (Apr),Trastuzumab,Herceptin,Genentech (Roche),False,True,2909.29,6,False,J9355
+2021 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,3384.43,8,True,Q5112
+2021 Q2 (Apr),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,3069.94,8,True,Q5112
+2021 Q3 (Jul),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2738.77,8,True,Q5112
+2021 Q4 (Oct),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2510.42,8,True,Q5112
+2022 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2292.51,8,True,Q5112
+2022 Q2 (Apr),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2948.38,8,True,Q5112
+2022 Q3 (Jul),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2602.35,8,True,Q5112
+2022 Q4 (Oct),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2383.5,8,True,Q5112
+2023 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,2188.13,8,True,Q5112
+2023 Q2 (Apr),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1839.45,8,True,Q5112
 2023 Q3 (Jul),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1713.93,8,True,Q5112
 2023 Q4 (Oct),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1493.27,8,True,Q5112
 2024 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1380.25,8,True,Q5112
@@ -103,11 +167,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1115.6,8,True,Q5112
 2024 Q4 (Oct),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1187.87,8,True,Q5112
 2025 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,863.26,8,True,Q5112
-2025 Q2 (Apr),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,967.15,8,True,Q5112
 2025 Q3 (Jul),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,681.89,8,True,Q5112
 2025 Q4 (Oct),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,560.23,8,True,Q5112
 2026 Q1 (Jan),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,912.5,8,True,Q5112
 2026 Q2 (Apr),Trastuzumab,Ontruzant,Samsung Bioepis,True,False,1019.19,8,True,Q5112
+2021 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,3311.31,8,True,Q5113
+2021 Q2 (Apr),Trastuzumab,Herzuma,Celltrion/Teva,False,False,3146.8,8,True,Q5113
+2021 Q3 (Jul),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2515.63,8,True,Q5113
+2021 Q4 (Oct),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2122.04,8,True,Q5113
+2022 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1762.93,8,True,Q5113
+2022 Q2 (Apr),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1927.86,8,True,Q5113
+2022 Q3 (Jul),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1529.58,8,True,Q5113
+2022 Q4 (Oct),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1957.25,8,True,Q5113
+2023 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1266.48,8,True,Q5113
+2023 Q2 (Apr),Trastuzumab,Herzuma,Celltrion/Teva,False,False,985.72,8,True,Q5113
 2023 Q3 (Jul),Trastuzumab,Herzuma,Celltrion/Teva,False,False,997.53,8,True,Q5113
 2023 Q4 (Oct),Trastuzumab,Herzuma,Celltrion/Teva,False,False,591.61,8,True,Q5113
 2024 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,1437.84,8,True,Q5113
@@ -115,11 +188,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2383.04,8,True,Q5113
 2024 Q4 (Oct),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2291.3,8,True,Q5113
 2025 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2778.84,8,True,Q5113
-2025 Q2 (Apr),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2864.08,8,True,Q5113
 2025 Q3 (Jul),Trastuzumab,Herzuma,Celltrion/Teva,False,False,3073.55,6,False,Q5113
 2025 Q4 (Oct),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2675.64,8,True,Q5113
 2026 Q1 (Jan),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2095.17,8,True,Q5113
 2026 Q2 (Apr),Trastuzumab,Herzuma,Celltrion/Teva,False,False,2120.05,8,True,Q5113
+2021 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,2756.23,8,True,Q5114
+2021 Q2 (Apr),Trastuzumab,Ogivri,Viatris,False,False,2250.56,8,True,Q5114
+2021 Q3 (Jul),Trastuzumab,Ogivri,Viatris,False,False,2374.42,8,True,Q5114
+2021 Q4 (Oct),Trastuzumab,Ogivri,Viatris,False,False,2231.37,8,True,Q5114
+2022 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,2066.13,8,True,Q5114
+2022 Q2 (Apr),Trastuzumab,Ogivri,Viatris,False,False,1823.83,8,True,Q5114
+2022 Q3 (Jul),Trastuzumab,Ogivri,Viatris,False,False,1736.68,8,True,Q5114
+2022 Q4 (Oct),Trastuzumab,Ogivri,Viatris,False,False,1635.82,8,True,Q5114
+2023 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,1526.79,8,True,Q5114
+2023 Q2 (Apr),Trastuzumab,Ogivri,Viatris,False,False,1725.17,8,True,Q5114
 2023 Q3 (Jul),Trastuzumab,Ogivri,Viatris,False,False,1440.0,8,True,Q5114
 2023 Q4 (Oct),Trastuzumab,Ogivri,Viatris,False,False,1425.61,8,True,Q5114
 2024 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,1610.92,8,True,Q5114
@@ -127,11 +209,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Ogivri,Viatris,False,False,2095.42,8,True,Q5114
 2024 Q4 (Oct),Trastuzumab,Ogivri,Viatris,False,False,2027.58,8,True,Q5114
 2025 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,1933.04,8,True,Q5114
-2025 Q2 (Apr),Trastuzumab,Ogivri,Viatris,False,False,1726.34,8,True,Q5114
 2025 Q3 (Jul),Trastuzumab,Ogivri,Viatris,False,False,1631.3,8,True,Q5114
 2025 Q4 (Oct),Trastuzumab,Ogivri,Viatris,False,False,1454.53,8,True,Q5114
 2026 Q1 (Jan),Trastuzumab,Ogivri,Viatris,False,False,1350.85,8,True,Q5114
 2026 Q2 (Apr),Trastuzumab,Ogivri,Viatris,False,False,1270.14,8,True,Q5114
+2021 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,2796.51,8,True,Q5116
+2021 Q2 (Apr),Trastuzumab,Trazimera,Pfizer,False,False,2563.54,8,True,Q5116
+2021 Q3 (Jul),Trastuzumab,Trazimera,Pfizer,False,False,2432.72,8,True,Q5116
+2021 Q4 (Oct),Trastuzumab,Trazimera,Pfizer,False,False,2232.42,8,True,Q5116
+2022 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,2069.15,8,True,Q5116
+2022 Q2 (Apr),Trastuzumab,Trazimera,Pfizer,False,False,1861.84,8,True,Q5116
+2022 Q3 (Jul),Trastuzumab,Trazimera,Pfizer,False,False,1635.63,8,True,Q5116
+2022 Q4 (Oct),Trastuzumab,Trazimera,Pfizer,False,False,1412.72,8,True,Q5116
+2023 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,1079.03,8,True,Q5116
+2023 Q2 (Apr),Trastuzumab,Trazimera,Pfizer,False,False,794.7,8,True,Q5116
 2023 Q3 (Jul),Trastuzumab,Trazimera,Pfizer,False,False,663.97,8,True,Q5116
 2023 Q4 (Oct),Trastuzumab,Trazimera,Pfizer,False,False,568.05,8,True,Q5116
 2024 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,432.36,8,True,Q5116
@@ -139,11 +230,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Trazimera,Pfizer,False,False,283.54,8,True,Q5116
 2024 Q4 (Oct),Trastuzumab,Trazimera,Pfizer,False,False,558.08,8,True,Q5116
 2025 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,552.46,8,True,Q5116
-2025 Q2 (Apr),Trastuzumab,Trazimera,Pfizer,False,False,807.17,8,True,Q5116
 2025 Q3 (Jul),Trastuzumab,Trazimera,Pfizer,False,False,960.39,8,True,Q5116
 2025 Q4 (Oct),Trastuzumab,Trazimera,Pfizer,False,False,937.81,8,True,Q5116
 2026 Q1 (Jan),Trastuzumab,Trazimera,Pfizer,False,False,111.68,8,True,Q5116
 2026 Q2 (Apr),Trastuzumab,Trazimera,Pfizer,False,False,205.11,8,True,Q5116
+2021 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,2726.41,8,True,Q5117
+2021 Q2 (Apr),Trastuzumab,Kanjinti,Amgen,False,False,2487.23,8,True,Q5117
+2021 Q3 (Jul),Trastuzumab,Kanjinti,Amgen,False,False,2203.9,8,True,Q5117
+2021 Q4 (Oct),Trastuzumab,Kanjinti,Amgen,False,False,1949.0,8,True,Q5117
+2022 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,1717.27,8,True,Q5117
+2022 Q2 (Apr),Trastuzumab,Kanjinti,Amgen,False,False,1520.21,8,True,Q5117
+2022 Q3 (Jul),Trastuzumab,Kanjinti,Amgen,False,False,1342.09,8,True,Q5117
+2022 Q4 (Oct),Trastuzumab,Kanjinti,Amgen,False,False,1105.82,8,True,Q5117
+2023 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,1139.39,8,True,Q5117
+2023 Q2 (Apr),Trastuzumab,Kanjinti,Amgen,False,False,834.52,8,True,Q5117
 2023 Q3 (Jul),Trastuzumab,Kanjinti,Amgen,False,False,749.31,8,True,Q5117
 2023 Q4 (Oct),Trastuzumab,Kanjinti,Amgen,False,False,766.25,8,True,Q5117
 2024 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,309.84,8,True,Q5117
@@ -151,7 +251,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Trastuzumab,Kanjinti,Amgen,False,False,564.73,8,True,Q5117
 2024 Q4 (Oct),Trastuzumab,Kanjinti,Amgen,False,False,774.89,8,True,Q5117
 2025 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,1212.66,8,True,Q5117
-2025 Q2 (Apr),Trastuzumab,Kanjinti,Amgen,False,False,932.08,8,True,Q5117
 2025 Q3 (Jul),Trastuzumab,Kanjinti,Amgen,False,False,1576.07,8,True,Q5117
 2025 Q4 (Oct),Trastuzumab,Kanjinti,Amgen,False,False,1759.16,8,True,Q5117
 2026 Q1 (Jan),Trastuzumab,Kanjinti,Amgen,False,False,1927.51,8,True,Q5117
@@ -160,6 +259,16 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2025 Q4 (Oct),Trastuzumab,Hercessi,Accord/Intas,False,False,1443.23,8,True,Q5146
 2026 Q1 (Jan),Trastuzumab,Hercessi,Accord/Intas,False,False,1327.41,8,True,Q5146
 2026 Q2 (Apr),Trastuzumab,Hercessi,Accord/Intas,False,False,1357.59,8,True,Q5146
+2021 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,2276.26,6,False,J0897
+2021 Q2 (Apr),Denosumab,Prolia / Xgeva,Amgen,False,True,2274.79,6,False,J0897
+2021 Q3 (Jul),Denosumab,Prolia / Xgeva,Amgen,False,True,2374.19,6,False,J0897
+2021 Q4 (Oct),Denosumab,Prolia / Xgeva,Amgen,False,True,2398.75,6,False,J0897
+2022 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,2400.57,6,False,J0897
+2022 Q2 (Apr),Denosumab,Prolia / Xgeva,Amgen,False,True,2406.79,6,False,J0897
+2022 Q3 (Jul),Denosumab,Prolia / Xgeva,Amgen,False,True,2519.43,6,False,J0897
+2022 Q4 (Oct),Denosumab,Prolia / Xgeva,Amgen,False,True,2548.3,6,False,J0897
+2023 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,2611.36,6,False,J0897
+2023 Q2 (Apr),Denosumab,Prolia / Xgeva,Amgen,False,True,2605.81,6,False,J0897
 2023 Q3 (Jul),Denosumab,Prolia / Xgeva,Amgen,False,True,2738.72,6,False,J0897
 2023 Q4 (Oct),Denosumab,Prolia / Xgeva,Amgen,False,True,2741.55,6,False,J0897
 2024 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,2852.6,6,False,J0897
@@ -167,7 +276,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Denosumab,Prolia / Xgeva,Amgen,False,True,3028.19,6,False,J0897
 2024 Q4 (Oct),Denosumab,Prolia / Xgeva,Amgen,False,True,3052.08,6,False,J0897
 2025 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,3130.87,6,False,J0897
-2025 Q2 (Apr),Denosumab,Prolia / Xgeva,Amgen,False,True,3148.19,6,False,J0897
 2025 Q3 (Jul),Denosumab,Prolia / Xgeva,Amgen,False,True,3309.85,6,False,J0897
 2025 Q4 (Oct),Denosumab,Prolia / Xgeva,Amgen,False,True,3326.04,6,False,J0897
 2026 Q1 (Jan),Denosumab,Prolia / Xgeva,Amgen,False,True,3334.75,6,False,J0897
@@ -175,6 +283,16 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2026 Q1 (Jan),Denosumab,Jubbonti/Wyost,Sandoz,False,False,3120.82,8,True,Q5136
 2026 Q2 (Apr),Denosumab,Jubbonti/Wyost,Sandoz,False,False,3082.45,8,True,Q5136
 2026 Q2 (Apr),Denosumab,Stoboclo/Osenvelt,Celltrion,False,False,2877.85,8,True,Q5157
+2021 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2858.42,6,False,J9035
+2021 Q2 (Apr),Bevacizumab,Avastin,Genentech (Roche),False,True,2736.38,6,False,J9035
+2021 Q3 (Jul),Bevacizumab,Avastin,Genentech (Roche),False,True,2663.96,6,False,J9035
+2021 Q4 (Oct),Bevacizumab,Avastin,Genentech (Roche),False,True,2657.06,6,False,J9035
+2022 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2560.79,6,False,J9035
+2022 Q2 (Apr),Bevacizumab,Avastin,Genentech (Roche),False,True,2622.3,6,False,J9035
+2022 Q3 (Jul),Bevacizumab,Avastin,Genentech (Roche),False,True,2612.26,6,False,J9035
+2022 Q4 (Oct),Bevacizumab,Avastin,Genentech (Roche),False,True,2631.02,6,False,J9035
+2023 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2669.89,6,False,J9035
+2023 Q2 (Apr),Bevacizumab,Avastin,Genentech (Roche),False,True,2692.6,6,False,J9035
 2023 Q3 (Jul),Bevacizumab,Avastin,Genentech (Roche),False,True,2776.57,6,False,J9035
 2023 Q4 (Oct),Bevacizumab,Avastin,Genentech (Roche),False,True,2785.28,6,False,J9035
 2024 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2795.21,6,False,J9035
@@ -182,11 +300,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Bevacizumab,Avastin,Genentech (Roche),False,True,2734.42,6,False,J9035
 2024 Q4 (Oct),Bevacizumab,Avastin,Genentech (Roche),False,True,2743.55,6,False,J9035
 2025 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2761.89,6,False,J9035
-2025 Q2 (Apr),Bevacizumab,Avastin,Genentech (Roche),False,True,2744.45,6,False,J9035
 2025 Q3 (Jul),Bevacizumab,Avastin,Genentech (Roche),False,True,2756.57,6,False,J9035
 2025 Q4 (Oct),Bevacizumab,Avastin,Genentech (Roche),False,True,2762.3,6,False,J9035
 2026 Q1 (Jan),Bevacizumab,Avastin,Genentech (Roche),False,True,2778.57,6,False,J9035
 2026 Q2 (Apr),Bevacizumab,Avastin,Genentech (Roche),False,True,2805.85,6,False,J9035
+2021 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,2040.65,8,True,Q5107
+2021 Q2 (Apr),Bevacizumab,Mvasi,Amgen,False,False,1896.81,8,True,Q5107
+2021 Q3 (Jul),Bevacizumab,Mvasi,Amgen,False,False,1738.12,8,True,Q5107
+2021 Q4 (Oct),Bevacizumab,Mvasi,Amgen,False,False,1569.72,8,True,Q5107
+2022 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,1385.86,8,True,Q5107
+2022 Q2 (Apr),Bevacizumab,Mvasi,Amgen,False,False,1235.46,8,True,Q5107
+2022 Q3 (Jul),Bevacizumab,Mvasi,Amgen,False,False,1080.58,8,True,Q5107
+2022 Q4 (Oct),Bevacizumab,Mvasi,Amgen,False,False,1001.92,8,True,Q5107
+2023 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,1054.25,8,True,Q5107
+2023 Q2 (Apr),Bevacizumab,Mvasi,Amgen,False,False,927.27,8,True,Q5107
 2023 Q3 (Jul),Bevacizumab,Mvasi,Amgen,False,False,913.79,8,True,Q5107
 2023 Q4 (Oct),Bevacizumab,Mvasi,Amgen,False,False,891.3,8,True,Q5107
 2024 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,801.18,8,True,Q5107
@@ -194,11 +321,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Bevacizumab,Mvasi,Amgen,False,False,845.41,8,True,Q5107
 2024 Q4 (Oct),Bevacizumab,Mvasi,Amgen,False,False,843.92,8,True,Q5107
 2025 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,928.13,8,True,Q5107
-2025 Q2 (Apr),Bevacizumab,Mvasi,Amgen,False,False,973.4,8,True,Q5107
 2025 Q3 (Jul),Bevacizumab,Mvasi,Amgen,False,False,933.39,8,True,Q5107
 2025 Q4 (Oct),Bevacizumab,Mvasi,Amgen,False,False,893.5,8,True,Q5107
 2026 Q1 (Jan),Bevacizumab,Mvasi,Amgen,False,False,731.31,8,True,Q5107
 2026 Q2 (Apr),Bevacizumab,Mvasi,Amgen,False,False,724.93,8,True,Q5107
+2021 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,2150.17,8,True,Q5118
+2021 Q2 (Apr),Bevacizumab,Zirabev,Pfizer,False,False,2074.81,8,True,Q5118
+2021 Q3 (Jul),Bevacizumab,Zirabev,Pfizer,False,False,1994.28,8,True,Q5118
+2021 Q4 (Oct),Bevacizumab,Zirabev,Pfizer,False,False,1882.2,8,True,Q5118
+2022 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,1818.7,8,True,Q5118
+2022 Q2 (Apr),Bevacizumab,Zirabev,Pfizer,False,False,1624.74,8,True,Q5118
+2022 Q3 (Jul),Bevacizumab,Zirabev,Pfizer,False,False,1465.5,8,True,Q5118
+2022 Q4 (Oct),Bevacizumab,Zirabev,Pfizer,False,False,1336.08,8,True,Q5118
+2023 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,1093.57,8,True,Q5118
+2023 Q2 (Apr),Bevacizumab,Zirabev,Pfizer,False,False,963.67,8,True,Q5118
 2023 Q3 (Jul),Bevacizumab,Zirabev,Pfizer,False,False,824.59,8,True,Q5118
 2023 Q4 (Oct),Bevacizumab,Zirabev,Pfizer,False,False,726.66,8,True,Q5118
 2024 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,636.82,8,True,Q5118
@@ -206,11 +342,11 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Bevacizumab,Zirabev,Pfizer,False,False,620.05,8,True,Q5118
 2024 Q4 (Oct),Bevacizumab,Zirabev,Pfizer,False,False,723.96,8,True,Q5118
 2025 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,699.05,8,True,Q5118
-2025 Q2 (Apr),Bevacizumab,Zirabev,Pfizer,False,False,858.16,8,True,Q5118
 2025 Q3 (Jul),Bevacizumab,Zirabev,Pfizer,False,False,736.67,8,True,Q5118
 2025 Q4 (Oct),Bevacizumab,Zirabev,Pfizer,False,False,809.66,8,True,Q5118
 2026 Q1 (Jan),Bevacizumab,Zirabev,Pfizer,False,False,809.67,8,True,Q5118
 2026 Q2 (Apr),Bevacizumab,Zirabev,Pfizer,False,False,809.69,8,True,Q5118
+2023 Q2 (Apr),Bevacizumab,Alymsys,Amneal,False,False,2786.76,6,False,Q5126
 2023 Q3 (Jul),Bevacizumab,Alymsys,Amneal,False,False,2678.59,8,True,Q5126
 2023 Q4 (Oct),Bevacizumab,Alymsys,Amneal,False,False,2333.82,8,True,Q5126
 2024 Q1 (Jan),Bevacizumab,Alymsys,Amneal,False,False,2199.74,8,True,Q5126
@@ -218,7 +354,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Bevacizumab,Alymsys,Amneal,False,False,1875.29,8,True,Q5126
 2024 Q4 (Oct),Bevacizumab,Alymsys,Amneal,False,False,1728.6,8,True,Q5126
 2025 Q1 (Jan),Bevacizumab,Alymsys,Amneal,False,False,1730.57,8,True,Q5126
-2025 Q2 (Apr),Bevacizumab,Alymsys,Amneal,False,False,1622.6,8,True,Q5126
 2025 Q3 (Jul),Bevacizumab,Alymsys,Amneal,False,False,1483.47,8,True,Q5126
 2025 Q4 (Oct),Bevacizumab,Alymsys,Amneal,False,False,1291.74,8,True,Q5126
 2026 Q1 (Jan),Bevacizumab,Alymsys,Amneal,False,False,1098.19,8,True,Q5126
@@ -229,11 +364,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Bevacizumab,Vegzelma,Celltrion,False,False,2230.89,8,True,Q5129
 2024 Q4 (Oct),Bevacizumab,Vegzelma,Celltrion,False,False,2053.48,8,True,Q5129
 2025 Q1 (Jan),Bevacizumab,Vegzelma,Celltrion,False,False,1859.09,8,True,Q5129
-2025 Q2 (Apr),Bevacizumab,Vegzelma,Celltrion,False,False,1703.64,8,True,Q5129
 2025 Q3 (Jul),Bevacizumab,Vegzelma,Celltrion,False,False,1524.23,8,True,Q5129
 2025 Q4 (Oct),Bevacizumab,Vegzelma,Celltrion,False,False,1377.58,8,True,Q5129
 2026 Q1 (Jan),Bevacizumab,Vegzelma,Celltrion,False,False,1304.03,8,True,Q5129
 2026 Q2 (Apr),Bevacizumab,Vegzelma,Celltrion,False,False,1161.69,8,True,Q5129
+2021 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,4331.89,6,False,J9312
+2021 Q2 (Apr),Rituximab,Rituxan,Genentech/Biogen,False,True,4204.76,6,False,J9312
+2021 Q3 (Jul),Rituximab,Rituxan,Genentech/Biogen,False,True,4140.33,6,False,J9312
+2021 Q4 (Oct),Rituximab,Rituxan,Genentech/Biogen,False,True,4100.8,6,False,J9312
+2022 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,4039.29,6,False,J9312
+2022 Q2 (Apr),Rituximab,Rituxan,Genentech/Biogen,False,True,4029.95,6,False,J9312
+2022 Q3 (Jul),Rituximab,Rituxan,Genentech/Biogen,False,True,3970.09,6,False,J9312
+2022 Q4 (Oct),Rituximab,Rituxan,Genentech/Biogen,False,True,3879.76,6,False,J9312
+2023 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,3856.04,6,False,J9312
+2023 Q2 (Apr),Rituximab,Rituxan,Genentech/Biogen,False,True,3829.58,6,False,J9312
 2023 Q3 (Jul),Rituximab,Rituxan,Genentech/Biogen,False,True,3822.5,6,False,J9312
 2023 Q4 (Oct),Rituximab,Rituxan,Genentech/Biogen,False,True,3782.64,6,False,J9312
 2024 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,3735.75,6,False,J9312
@@ -241,11 +385,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Rituximab,Rituxan,Genentech/Biogen,False,True,3663.92,6,False,J9312
 2024 Q4 (Oct),Rituximab,Rituxan,Genentech/Biogen,False,True,3646.89,6,False,J9312
 2025 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,3619.34,6,False,J9312
-2025 Q2 (Apr),Rituximab,Rituxan,Genentech/Biogen,False,True,3605.33,6,False,J9312
 2025 Q3 (Jul),Rituximab,Rituxan,Genentech/Biogen,False,True,3581.65,6,False,J9312
 2025 Q4 (Oct),Rituximab,Rituxan,Genentech/Biogen,False,True,3548.11,6,False,J9312
 2026 Q1 (Jan),Rituximab,Rituxan,Genentech/Biogen,False,True,3526.65,6,False,J9312
 2026 Q2 (Apr),Rituximab,Rituxan,Genentech/Biogen,False,True,3498.02,6,False,J9312
+2021 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,3078.35,8,True,Q5115
+2021 Q2 (Apr),Rituximab,Truxima,Celltrion/Teva,False,False,2766.82,8,True,Q5115
+2021 Q3 (Jul),Rituximab,Truxima,Celltrion/Teva,False,False,2710.72,8,True,Q5115
+2021 Q4 (Oct),Rituximab,Truxima,Celltrion/Teva,False,False,2700.79,8,True,Q5115
+2022 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,2544.21,8,True,Q5115
+2022 Q2 (Apr),Rituximab,Truxima,Celltrion/Teva,False,False,2362.15,8,True,Q5115
+2022 Q3 (Jul),Rituximab,Truxima,Celltrion/Teva,False,False,2099.39,8,True,Q5115
+2022 Q4 (Oct),Rituximab,Truxima,Celltrion/Teva,False,False,2340.62,8,True,Q5115
+2023 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,2132.97,8,True,Q5115
+2023 Q2 (Apr),Rituximab,Truxima,Celltrion/Teva,False,False,2083.68,8,True,Q5115
 2023 Q3 (Jul),Rituximab,Truxima,Celltrion/Teva,False,False,1683.75,8,True,Q5115
 2023 Q4 (Oct),Rituximab,Truxima,Celltrion/Teva,False,False,1578.69,8,True,Q5115
 2024 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,1495.74,8,True,Q5115
@@ -253,11 +406,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Rituximab,Truxima,Celltrion/Teva,False,False,1392.04,8,True,Q5115
 2024 Q4 (Oct),Rituximab,Truxima,Celltrion/Teva,False,False,1387.95,8,True,Q5115
 2025 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,1302.1,8,True,Q5115
-2025 Q2 (Apr),Rituximab,Truxima,Celltrion/Teva,False,False,1449.52,8,True,Q5115
 2025 Q3 (Jul),Rituximab,Truxima,Celltrion/Teva,False,False,1272.47,8,True,Q5115
 2025 Q4 (Oct),Rituximab,Truxima,Celltrion/Teva,False,False,1185.1,8,True,Q5115
 2026 Q1 (Jan),Rituximab,Truxima,Celltrion/Teva,False,False,1225.12,8,True,Q5115
 2026 Q2 (Apr),Rituximab,Truxima,Celltrion/Teva,False,False,1284.06,8,True,Q5115
+2021 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,3019.6,8,True,Q5119
+2021 Q2 (Apr),Rituximab,Ruxience,Pfizer,False,False,2888.97,8,True,Q5119
+2021 Q3 (Jul),Rituximab,Ruxience,Pfizer,False,False,2792.87,8,True,Q5119
+2021 Q4 (Oct),Rituximab,Ruxience,Pfizer,False,False,2611.74,8,True,Q5119
+2022 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,2495.36,8,True,Q5119
+2022 Q2 (Apr),Rituximab,Ruxience,Pfizer,False,False,2168.4,8,True,Q5119
+2022 Q3 (Jul),Rituximab,Ruxience,Pfizer,False,False,1883.84,8,True,Q5119
+2022 Q4 (Oct),Rituximab,Ruxience,Pfizer,False,False,1676.67,8,True,Q5119
+2023 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,1245.87,8,True,Q5119
+2023 Q2 (Apr),Rituximab,Ruxience,Pfizer,False,False,1072.88,8,True,Q5119
 2023 Q3 (Jul),Rituximab,Ruxience,Pfizer,False,False,930.1,8,True,Q5119
 2023 Q4 (Oct),Rituximab,Ruxience,Pfizer,False,False,812.59,8,True,Q5119
 2024 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,723.49,8,True,Q5119
@@ -265,11 +427,18 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Rituximab,Ruxience,Pfizer,False,False,669.44,8,True,Q5119
 2024 Q4 (Oct),Rituximab,Ruxience,Pfizer,False,False,830.1,8,True,Q5119
 2025 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,889.9,8,True,Q5119
-2025 Q2 (Apr),Rituximab,Ruxience,Pfizer,False,False,958.72,8,True,Q5119
 2025 Q3 (Jul),Rituximab,Ruxience,Pfizer,False,False,1038.62,8,True,Q5119
 2025 Q4 (Oct),Rituximab,Ruxience,Pfizer,False,False,1108.4,8,True,Q5119
 2026 Q1 (Jan),Rituximab,Ruxience,Pfizer,False,False,381.37,8,True,Q5119
 2026 Q2 (Apr),Rituximab,Ruxience,Pfizer,False,False,404.46,8,True,Q5119
+2021 Q3 (Jul),Rituximab,Riabni,Amgen,False,False,3360.27,8,True,Q5123
+2021 Q4 (Oct),Rituximab,Riabni,Amgen,False,False,3283.19,8,True,Q5123
+2022 Q1 (Jan),Rituximab,Riabni,Amgen,False,False,2893.31,8,True,Q5123
+2022 Q2 (Apr),Rituximab,Riabni,Amgen,False,False,2507.0,8,True,Q5123
+2022 Q3 (Jul),Rituximab,Riabni,Amgen,False,False,2174.24,8,True,Q5123
+2022 Q4 (Oct),Rituximab,Riabni,Amgen,False,False,2119.62,8,True,Q5123
+2023 Q1 (Jan),Rituximab,Riabni,Amgen,False,False,2179.02,8,True,Q5123
+2023 Q2 (Apr),Rituximab,Riabni,Amgen,False,False,1953.88,8,True,Q5123
 2023 Q3 (Jul),Rituximab,Riabni,Amgen,False,False,1923.15,8,True,Q5123
 2023 Q4 (Oct),Rituximab,Riabni,Amgen,False,False,1871.14,8,True,Q5123
 2024 Q1 (Jan),Rituximab,Riabni,Amgen,False,False,1772.09,8,True,Q5123
@@ -277,11 +446,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Rituximab,Riabni,Amgen,False,False,1725.49,8,True,Q5123
 2024 Q4 (Oct),Rituximab,Riabni,Amgen,False,False,1640.5,8,True,Q5123
 2025 Q1 (Jan),Rituximab,Riabni,Amgen,False,False,1549.25,8,True,Q5123
-2025 Q2 (Apr),Rituximab,Riabni,Amgen,False,False,1365.92,8,True,Q5123
 2025 Q3 (Jul),Rituximab,Riabni,Amgen,False,False,1209.32,8,True,Q5123
 2025 Q4 (Oct),Rituximab,Riabni,Amgen,False,False,1041.6,8,True,Q5123
 2026 Q1 (Jan),Rituximab,Riabni,Amgen,False,False,762.67,8,True,Q5123
 2026 Q2 (Apr),Rituximab,Riabni,Amgen,False,False,733.01,8,True,Q5123
+2021 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,265.47,6,False,J1442
+2021 Q2 (Apr),Filgrastim,Neupogen,Amgen,False,True,268.87,6,False,J1442
+2021 Q3 (Jul),Filgrastim,Neupogen,Amgen,False,True,272.83,6,False,J1442
+2021 Q4 (Oct),Filgrastim,Neupogen,Amgen,False,True,275.09,6,False,J1442
+2022 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,278.49,6,False,J1442
+2022 Q2 (Apr),Filgrastim,Neupogen,Amgen,False,True,281.32,6,False,J1442
+2022 Q3 (Jul),Filgrastim,Neupogen,Amgen,False,True,281.89,6,False,J1442
+2022 Q4 (Oct),Filgrastim,Neupogen,Amgen,False,True,279.34,6,False,J1442
+2023 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,277.36,6,False,J1442
+2023 Q2 (Apr),Filgrastim,Neupogen,Amgen,False,True,277.36,6,False,J1442
 2023 Q3 (Jul),Filgrastim,Neupogen,Amgen,False,True,278.77,6,False,J1442
 2023 Q4 (Oct),Filgrastim,Neupogen,Amgen,False,True,279.06,6,False,J1442
 2024 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,278.77,6,False,J1442
@@ -289,11 +467,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Filgrastim,Neupogen,Amgen,False,True,281.6,6,False,J1442
 2024 Q4 (Oct),Filgrastim,Neupogen,Amgen,False,True,281.6,6,False,J1442
 2025 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,278.49,6,False,J1442
-2025 Q2 (Apr),Filgrastim,Neupogen,Amgen,False,True,278.21,6,False,J1442
 2025 Q3 (Jul),Filgrastim,Neupogen,Amgen,False,True,278.77,6,False,J1442
 2025 Q4 (Oct),Filgrastim,Neupogen,Amgen,False,True,281.89,6,False,J1442
 2026 Q1 (Jan),Filgrastim,Neupogen,Amgen,False,True,282.17,6,False,J1442
 2026 Q2 (Apr),Filgrastim,Neupogen,Amgen,False,True,287.55,6,False,J1442
+2021 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,102.66,8,True,Q5101
+2021 Q2 (Apr),Filgrastim,Zarxio,Sandoz,False,False,91.89,8,True,Q5101
+2021 Q3 (Jul),Filgrastim,Zarxio,Sandoz,False,False,82.87,8,True,Q5101
+2021 Q4 (Oct),Filgrastim,Zarxio,Sandoz,False,False,73.39,8,True,Q5101
+2022 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,69.52,8,True,Q5101
+2022 Q2 (Apr),Filgrastim,Zarxio,Sandoz,False,False,70.49,8,True,Q5101
+2022 Q3 (Jul),Filgrastim,Zarxio,Sandoz,False,False,57.55,8,True,Q5101
+2022 Q4 (Oct),Filgrastim,Zarxio,Sandoz,False,False,59.55,8,True,Q5101
+2023 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,49.21,8,True,Q5101
+2023 Q2 (Apr),Filgrastim,Zarxio,Sandoz,False,False,45.01,8,True,Q5101
 2023 Q3 (Jul),Filgrastim,Zarxio,Sandoz,False,False,32.0,8,True,Q5101
 2023 Q4 (Oct),Filgrastim,Zarxio,Sandoz,False,False,28.68,8,True,Q5101
 2024 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,73.4,8,True,Q5101
@@ -301,11 +488,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Filgrastim,Zarxio,Sandoz,False,False,51.87,8,True,Q5101
 2024 Q4 (Oct),Filgrastim,Zarxio,Sandoz,False,False,86.07,8,True,Q5101
 2025 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,84.82,8,True,Q5101
-2025 Q2 (Apr),Filgrastim,Zarxio,Sandoz,False,False,77.64,8,True,Q5101
 2025 Q3 (Jul),Filgrastim,Zarxio,Sandoz,False,False,87.8,8,True,Q5101
 2025 Q4 (Oct),Filgrastim,Zarxio,Sandoz,False,False,114.85,8,True,Q5101
 2026 Q1 (Jan),Filgrastim,Zarxio,Sandoz,False,False,82.13,8,True,Q5101
 2026 Q2 (Apr),Filgrastim,Zarxio,Sandoz,False,False,83.2,8,True,Q5101
+2021 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,135.66,8,True,Q5110
+2021 Q2 (Apr),Filgrastim,Nivestym,Pfizer/Hospira,False,False,113.79,8,True,Q5110
+2021 Q3 (Jul),Filgrastim,Nivestym,Pfizer/Hospira,False,False,94.57,8,True,Q5110
+2021 Q4 (Oct),Filgrastim,Nivestym,Pfizer/Hospira,False,False,75.49,8,True,Q5110
+2022 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,78.82,8,True,Q5110
+2022 Q2 (Apr),Filgrastim,Nivestym,Pfizer/Hospira,False,False,84.29,8,True,Q5110
+2022 Q3 (Jul),Filgrastim,Nivestym,Pfizer/Hospira,False,False,79.45,8,True,Q5110
+2022 Q4 (Oct),Filgrastim,Nivestym,Pfizer/Hospira,False,False,97.65,8,True,Q5110
+2023 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,85.21,8,True,Q5110
+2023 Q2 (Apr),Filgrastim,Nivestym,Pfizer/Hospira,False,False,78.01,8,True,Q5110
 2023 Q3 (Jul),Filgrastim,Nivestym,Pfizer/Hospira,False,False,75.5,8,True,Q5110
 2023 Q4 (Oct),Filgrastim,Nivestym,Pfizer/Hospira,False,False,66.78,8,True,Q5110
 2024 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,65.0,8,True,Q5110
@@ -313,11 +509,11 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Filgrastim,Nivestym,Pfizer/Hospira,False,False,60.57,8,True,Q5110
 2024 Q4 (Oct),Filgrastim,Nivestym,Pfizer/Hospira,False,False,58.47,8,True,Q5110
 2025 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,64.42,8,True,Q5110
-2025 Q2 (Apr),Filgrastim,Nivestym,Pfizer/Hospira,False,False,63.84,8,True,Q5110
 2025 Q3 (Jul),Filgrastim,Nivestym,Pfizer/Hospira,False,False,63.5,8,True,Q5110
 2025 Q4 (Oct),Filgrastim,Nivestym,Pfizer/Hospira,False,False,68.65,8,True,Q5110
 2026 Q1 (Jan),Filgrastim,Nivestym,Pfizer/Hospira,False,False,59.93,8,True,Q5110
 2026 Q2 (Apr),Filgrastim,Nivestym,Pfizer/Hospira,False,False,62.2,8,True,Q5110
+2023 Q2 (Apr),Filgrastim,Releuko,Amneal/Kashiv,False,False,153.31,8,True,Q5125
 2023 Q3 (Jul),Filgrastim,Releuko,Amneal/Kashiv,False,False,153.5,8,True,Q5125
 2023 Q4 (Oct),Filgrastim,Releuko,Amneal/Kashiv,False,False,135.18,8,True,Q5125
 2024 Q1 (Jan),Filgrastim,Releuko,Amneal/Kashiv,False,False,139.4,8,True,Q5125
@@ -325,11 +521,16 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Filgrastim,Releuko,Amneal/Kashiv,False,False,100.47,8,True,Q5125
 2024 Q4 (Oct),Filgrastim,Releuko,Amneal/Kashiv,False,False,119.07,8,True,Q5125
 2025 Q1 (Jan),Filgrastim,Releuko,Amneal/Kashiv,False,False,113.02,8,True,Q5125
-2025 Q2 (Apr),Filgrastim,Releuko,Amneal/Kashiv,False,False,105.24,8,True,Q5125
 2025 Q3 (Jul),Filgrastim,Releuko,Amneal/Kashiv,False,False,100.1,8,True,Q5125
 2025 Q4 (Oct),Filgrastim,Releuko,Amneal/Kashiv,False,False,89.95,8,True,Q5125
 2026 Q1 (Jan),Filgrastim,Releuko,Amneal/Kashiv,False,False,78.83,8,True,Q5125
 2026 Q2 (Apr),Filgrastim,Releuko,Amneal/Kashiv,False,False,73.0,8,True,Q5125
+2022 Q1 (Jan),Pegfilgrastim,Neulasta,Amgen,False,True,2060.74,6,False,J2506
+2022 Q2 (Apr),Pegfilgrastim,Neulasta,Amgen,False,True,1898.28,6,False,J2506
+2022 Q3 (Jul),Pegfilgrastim,Neulasta,Amgen,False,True,1764.08,6,False,J2506
+2022 Q4 (Oct),Pegfilgrastim,Neulasta,Amgen,False,True,1487.71,6,False,J2506
+2023 Q1 (Jan),Pegfilgrastim,Neulasta,Amgen,False,True,1530.18,6,False,J2506
+2023 Q2 (Apr),Pegfilgrastim,Neulasta,Amgen,False,True,1241.72,6,False,J2506
 2023 Q3 (Jul),Pegfilgrastim,Neulasta,Amgen,False,True,970.3,6,False,J2506
 2023 Q4 (Oct),Pegfilgrastim,Neulasta,Amgen,False,True,848.47,6,False,J2506
 2024 Q1 (Jan),Pegfilgrastim,Neulasta,Amgen,False,True,573.71,6,False,J2506
@@ -337,11 +538,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Neulasta,Amgen,False,True,624.07,6,False,J2506
 2024 Q4 (Oct),Pegfilgrastim,Neulasta,Amgen,False,True,352.57,6,False,J2506
 2025 Q1 (Jan),Pegfilgrastim,Neulasta,Amgen,False,True,226.2,6,False,J2506
-2025 Q2 (Apr),Pegfilgrastim,Neulasta,Amgen,False,True,226.2,6,False,J2506
 2025 Q3 (Jul),Pegfilgrastim,Neulasta,Amgen,False,True,661.12,6,False,J2506
 2025 Q4 (Oct),Pegfilgrastim,Neulasta,Amgen,False,True,1011.44,6,False,J2506
 2026 Q1 (Jan),Pegfilgrastim,Neulasta,Amgen,False,True,1390.61,6,False,J2506
 2026 Q2 (Apr),Pegfilgrastim,Neulasta,Amgen,False,True,1442.03,6,False,J2506
+2021 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,2977.94,6,False,Q5108
+2021 Q2 (Apr),Pegfilgrastim,Fulphila,Biocon,False,False,2837.48,6,False,Q5108
+2021 Q3 (Jul),Pegfilgrastim,Fulphila,Biocon,False,False,2667.13,6,False,Q5108
+2021 Q4 (Oct),Pegfilgrastim,Fulphila,Biocon,False,False,2534.22,6,False,Q5108
+2022 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,2326.01,6,False,Q5108
+2022 Q2 (Apr),Pegfilgrastim,Fulphila,Biocon,False,False,2044.28,6,False,Q5108
+2022 Q3 (Jul),Pegfilgrastim,Fulphila,Biocon,False,False,1882.06,6,False,Q5108
+2022 Q4 (Oct),Pegfilgrastim,Fulphila,Biocon,False,False,1604.11,6,False,Q5108
+2023 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,1546.71,6,False,Q5108
+2023 Q2 (Apr),Pegfilgrastim,Fulphila,Biocon,False,False,1515.68,6,False,Q5108
 2023 Q3 (Jul),Pegfilgrastim,Fulphila,Biocon,False,False,1275.52,6,False,Q5108
 2023 Q4 (Oct),Pegfilgrastim,Fulphila,Biocon,False,False,1106.66,6,False,Q5108
 2024 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,1436.06,6,False,Q5108
@@ -349,11 +559,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Fulphila,Biocon,False,False,1735.62,6,False,Q5108
 2024 Q4 (Oct),Pegfilgrastim,Fulphila,Biocon,False,False,1605.25,6,False,Q5108
 2025 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,1490.08,6,False,Q5108
-2025 Q2 (Apr),Pegfilgrastim,Fulphila,Biocon,False,False,1341.17,6,False,Q5108
 2025 Q3 (Jul),Pegfilgrastim,Fulphila,Biocon,False,False,1204.79,6,False,Q5108
 2025 Q4 (Oct),Pegfilgrastim,Fulphila,Biocon,False,False,1128.85,6,False,Q5108
 2026 Q1 (Jan),Pegfilgrastim,Fulphila,Biocon,False,False,1075.2,8,True,Q5108
 2026 Q2 (Apr),Pegfilgrastim,Fulphila,Biocon,False,False,838.61,8,True,Q5108
+2021 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,3213.43,6,False,Q5111
+2021 Q2 (Apr),Pegfilgrastim,Udenyca,Coherus,False,False,3015.61,6,False,Q5111
+2021 Q3 (Jul),Pegfilgrastim,Udenyca,Coherus,False,False,3020.83,6,False,Q5111
+2021 Q4 (Oct),Pegfilgrastim,Udenyca,Coherus,False,False,2668.5,6,False,Q5111
+2022 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,2301.54,6,False,Q5111
+2022 Q2 (Apr),Pegfilgrastim,Udenyca,Coherus,False,False,2087.05,6,False,Q5111
+2022 Q3 (Jul),Pegfilgrastim,Udenyca,Coherus,False,False,1956.58,6,False,Q5111
+2022 Q4 (Oct),Pegfilgrastim,Udenyca,Coherus,False,False,1873.94,6,False,Q5111
+2023 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,1560.1,6,False,Q5111
+2023 Q2 (Apr),Pegfilgrastim,Udenyca,Coherus,False,False,1619.49,6,False,Q5111
 2023 Q3 (Jul),Pegfilgrastim,Udenyca,Coherus,False,False,1439.17,6,False,Q5111
 2023 Q4 (Oct),Pegfilgrastim,Udenyca,Coherus,False,False,1757.5,6,False,Q5111
 2024 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,1430.81,6,False,Q5111
@@ -361,18 +580,35 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Udenyca,Coherus,False,False,1955.11,6,False,Q5111
 2024 Q4 (Oct),Pegfilgrastim,Udenyca,Coherus,False,False,1699.37,6,False,Q5111
 2025 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,1613.03,6,False,Q5111
-2025 Q2 (Apr),Pegfilgrastim,Udenyca,Coherus,False,False,1949.68,6,False,Q5111
 2025 Q3 (Jul),Pegfilgrastim,Udenyca,Coherus,False,False,1592.86,6,False,Q5111
 2025 Q4 (Oct),Pegfilgrastim,Udenyca,Coherus,False,False,1215.32,6,False,Q5111
 2026 Q1 (Jan),Pegfilgrastim,Udenyca,Coherus,False,False,1860.43,6,False,Q5111
 2026 Q2 (Apr),Pegfilgrastim,Udenyca,Coherus,False,False,1544.15,6,False,Q5111
+2021 Q1 (Jan),Pegfilgrastim,Ziextenzo,Sandoz,False,False,3575.54,6,False,Q5120
+2021 Q2 (Apr),Pegfilgrastim,Ziextenzo,Sandoz,False,False,3321.89,6,False,Q5120
+2021 Q3 (Jul),Pegfilgrastim,Ziextenzo,Sandoz,False,False,3246.72,6,False,Q5120
+2021 Q4 (Oct),Pegfilgrastim,Ziextenzo,Sandoz,False,False,2945.17,6,False,Q5120
+2022 Q1 (Jan),Pegfilgrastim,Ziextenzo,Sandoz,False,False,2550.69,6,False,Q5120
+2022 Q2 (Apr),Pegfilgrastim,Ziextenzo,Sandoz,False,False,2036.96,6,False,Q5120
+2022 Q3 (Jul),Pegfilgrastim,Ziextenzo,Sandoz,False,False,1708.52,8,True,Q5120
+2022 Q4 (Oct),Pegfilgrastim,Ziextenzo,Sandoz,False,False,1537.31,6,False,Q5120
+2023 Q1 (Jan),Pegfilgrastim,Ziextenzo,Sandoz,False,False,956.89,8,True,Q5120
+2023 Q2 (Apr),Pegfilgrastim,Ziextenzo,Sandoz,False,False,861.41,8,True,Q5120
 2023 Q3 (Jul),Pegfilgrastim,Ziextenzo,Sandoz,False,False,282.96,8,True,Q5120
 2025 Q1 (Jan),Pegfilgrastim,Ziextenzo,Sandoz,False,False,282.96,6,False,Q5120
-2025 Q2 (Apr),Pegfilgrastim,Ziextenzo,Sandoz,False,False,282.96,6,False,Q5120
 2025 Q3 (Jul),Pegfilgrastim,Ziextenzo,Sandoz,False,False,282.95,8,True,Q5120
 2025 Q4 (Oct),Pegfilgrastim,Ziextenzo,Sandoz,False,False,282.96,8,True,Q5120
 2026 Q1 (Jan),Pegfilgrastim,Ziextenzo,Sandoz,False,False,1320.28,8,True,Q5120
 2026 Q2 (Apr),Pegfilgrastim,Ziextenzo,Sandoz,False,False,1320.28,8,True,Q5120
+2021 Q2 (Apr),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,4042.75,6,False,Q5122
+2021 Q3 (Jul),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,3770.57,6,False,Q5122
+2021 Q4 (Oct),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,3416.3,6,False,Q5122
+2022 Q1 (Jan),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,3106.05,6,False,Q5122
+2022 Q2 (Apr),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,2802.64,6,False,Q5122
+2022 Q3 (Jul),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,2506.38,6,False,Q5122
+2022 Q4 (Oct),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1967.27,6,False,Q5122
+2023 Q1 (Jan),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1634.55,6,False,Q5122
+2023 Q2 (Apr),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1397.45,6,False,Q5122
 2023 Q3 (Jul),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1147.48,6,False,Q5122
 2023 Q4 (Oct),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1016.85,6,False,Q5122
 2024 Q1 (Jan),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,714.1,6,False,Q5122
@@ -380,7 +616,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,917.7,6,False,Q5122
 2024 Q4 (Oct),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1137.42,6,False,Q5122
 2025 Q1 (Jan),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1390.55,6,False,Q5122
-2025 Q2 (Apr),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1597.45,6,False,Q5122
 2025 Q3 (Jul),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1544.8,6,False,Q5122
 2025 Q4 (Oct),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1513.21,6,False,Q5122
 2026 Q1 (Jan),Pegfilgrastim,Nyvepria,Pfizer/Hospira,False,False,1513.21,6,False,Q5122
@@ -391,7 +626,6 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,3987.27,6,False,Q5127
 2024 Q4 (Oct),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,3646.75,6,False,Q5127
 2025 Q1 (Jan),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,3566.09,6,False,Q5127
-2025 Q2 (Apr),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,3001.37,6,False,Q5127
 2025 Q3 (Jul),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,2709.68,6,False,Q5127
 2025 Q4 (Oct),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,2158.21,6,False,Q5127
 2026 Q1 (Jan),Pegfilgrastim,Stimufend,Fresenius Kabi,False,False,1683.4,6,False,Q5127
@@ -402,11 +636,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,2241.78,6,False,Q5130
 2024 Q4 (Oct),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,2088.06,6,False,Q5130
 2025 Q1 (Jan),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,2022.76,6,False,Q5130
-2025 Q2 (Apr),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,1956.28,6,False,Q5130
 2025 Q3 (Jul),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,1750.88,6,False,Q5130
 2025 Q4 (Oct),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,1594.89,6,False,Q5130
 2026 Q1 (Jan),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,1443.29,6,False,Q5130
 2026 Q2 (Apr),Pegfilgrastim,Fylnetra,Amneal/Kashiv,False,False,1230.23,8,True,Q5130
+2021 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,332.98,6,False,J0885
+2021 Q2 (Apr),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,322.11,6,False,J0885
+2021 Q3 (Jul),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,310.3,6,False,J0885
+2021 Q4 (Oct),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,307.66,6,False,J0885
+2022 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,310.26,6,False,J0885
+2022 Q2 (Apr),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,306.11,6,False,J0885
+2022 Q3 (Jul),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,310.04,6,False,J0885
+2022 Q4 (Oct),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,315.85,6,False,J0885
+2023 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,311.13,6,False,J0885
+2023 Q2 (Apr),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,299.17,6,False,J0885
 2023 Q3 (Jul),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,259.47,6,False,J0885
 2023 Q4 (Oct),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,267.62,6,False,J0885
 2024 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,335.32,6,False,J0885
@@ -414,11 +657,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,306.94,6,False,J0885
 2024 Q4 (Oct),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,284.08,6,False,J0885
 2025 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,243.81,6,False,J0885
-2025 Q2 (Apr),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,267.17,6,False,J0885
 2025 Q3 (Jul),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,289.66,6,False,J0885
 2025 Q4 (Oct),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,322.42,6,False,J0885
 2026 Q1 (Jan),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,292.19,6,False,J0885
 2026 Q2 (Apr),Epoetin alfa,Epogen/Procrit,Amgen/J&J,False,True,275.66,6,False,J0885
+2021 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.56,8,True,Q5105
+2021 Q2 (Apr),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,10.99,8,True,Q5105
+2021 Q3 (Jul),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,9.7,8,True,Q5105
+2021 Q4 (Oct),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,10.03,8,True,Q5105
+2022 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.7,8,True,Q5105
+2022 Q2 (Apr),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,8.55,8,True,Q5105
+2022 Q3 (Jul),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,8.76,8,True,Q5105
+2022 Q4 (Oct),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.25,8,True,Q5105
+2023 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.35,8,True,Q5105
+2023 Q2 (Apr),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,10.11,8,True,Q5105
 2023 Q3 (Jul),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,9.24,8,True,Q5105
 2023 Q4 (Oct),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.59,8,True,Q5105
 2024 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,4.45,8,True,Q5105
@@ -426,11 +678,20 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,2.72,8,True,Q5105
 2024 Q4 (Oct),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.75,8,True,Q5105
 2025 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,10.38,8,True,Q5105
-2025 Q2 (Apr),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,6.91,8,True,Q5105
 2025 Q3 (Jul),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,7.11,8,True,Q5105
 2025 Q4 (Oct),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,5.61,8,True,Q5105
 2026 Q1 (Jan),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,6.9,8,True,Q5105
 2026 Q2 (Apr),Epoetin alfa,Retacrit,Pfizer/Hospira,False,False,9.47,8,True,Q5105
+2021 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2063.77,6,False,J3262
+2021 Q2 (Apr),Tocilizumab,Actemra,Genentech (Roche),False,True,2078.11,6,False,J3262
+2021 Q3 (Jul),Tocilizumab,Actemra,Genentech (Roche),False,True,2087.55,6,False,J3262
+2021 Q4 (Oct),Tocilizumab,Actemra,Genentech (Roche),False,True,2095.47,6,False,J3262
+2022 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2163.02,6,False,J3262
+2022 Q2 (Apr),Tocilizumab,Actemra,Genentech (Roche),False,True,2195.85,6,False,J3262
+2022 Q3 (Jul),Tocilizumab,Actemra,Genentech (Roche),False,True,2187.92,6,False,J3262
+2022 Q4 (Oct),Tocilizumab,Actemra,Genentech (Roche),False,True,2326.04,6,False,J3262
+2023 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2260.0,6,False,J3262
+2023 Q2 (Apr),Tocilizumab,Actemra,Genentech (Roche),False,True,2211.32,6,False,J3262
 2023 Q3 (Jul),Tocilizumab,Actemra,Genentech (Roche),False,True,2230.19,6,False,J3262
 2023 Q4 (Oct),Tocilizumab,Actemra,Genentech (Roche),False,True,2335.09,6,False,J3262
 2024 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2309.43,6,False,J3262
@@ -438,19 +699,16 @@ quarter,molecule,brand,company,is_sb,is_orig,asp,addon_pct,ira,hcpcs
 2024 Q3 (Jul),Tocilizumab,Actemra,Genentech (Roche),False,True,2245.28,6,False,J3262
 2024 Q4 (Oct),Tocilizumab,Actemra,Genentech (Roche),False,True,2249.81,6,False,J3262
 2025 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2251.32,6,False,J3262
-2025 Q2 (Apr),Tocilizumab,Actemra,Genentech (Roche),False,True,2219.25,6,False,J3262
 2025 Q3 (Jul),Tocilizumab,Actemra,Genentech (Roche),False,True,2183.4,6,False,J3262
 2025 Q4 (Oct),Tocilizumab,Actemra,Genentech (Roche),False,True,2153.96,6,False,J3262
 2026 Q1 (Jan),Tocilizumab,Actemra,Genentech (Roche),False,True,2116.6,6,False,J3262
 2026 Q2 (Apr),Tocilizumab,Actemra,Genentech (Roche),False,True,2086.79,6,False,J3262
 2025 Q1 (Jan),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,2263.32,6,False,Q5133
-2025 Q2 (Apr),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,2255.25,6,False,Q5133
 2025 Q3 (Jul),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,2186.6,6,False,Q5133
 2025 Q4 (Oct),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,2042.08,8,True,Q5133
 2026 Q1 (Jan),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,2064.67,8,True,Q5133
 2026 Q2 (Apr),Tocilizumab,Tofidence,Bio-Thera/Organon,False,False,1936.66,8,True,Q5133
 2025 Q1 (Jan),Tocilizumab,Tyenne,Fresenius Kabi,False,False,1462.29,8,True,Q5135
-2025 Q2 (Apr),Tocilizumab,Tyenne,Fresenius Kabi,False,False,1448.46,8,True,Q5135
 2025 Q3 (Jul),Tocilizumab,Tyenne,Fresenius Kabi,False,False,1700.93,8,True,Q5135
 2025 Q4 (Oct),Tocilizumab,Tyenne,Fresenius Kabi,False,False,1593.68,8,True,Q5135
 2026 Q1 (Jan),Tocilizumab,Tyenne,Fresenius Kabi,False,False,1508.27,8,True,Q5135
