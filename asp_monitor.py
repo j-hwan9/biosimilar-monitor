@@ -130,6 +130,9 @@ QUARTERS_FALLBACK = [
     {"label": "2026 Q2 (Apr)", "url": "https://www.cms.gov/files/zip/april-2026-medicare-part-b-payment-limit-files-03-19-2026-final-file.zip"},
 ]
 
+# Crosswalk 레퍼런스
+CROSSWALK_URL = "https://www.cms.gov/files/zip/april-2026-ndc-hcpcs-crosswalk-03-19-2026-final-file.zip"
+
 # ============================================================
 # 제품 DB
 # hcpcs_fixed   : Originator J코드 (불변)
@@ -533,6 +536,7 @@ def collect_asp_data(validation: dict) -> tuple:
     print("\n[2/4] CMS ASP 파일 다운로드 및 파싱")
     all_diag = []
     quarter_brand_data = []
+    quarters = get_all_quarters()
 
     for q in quarters:
         bd, diag = download_and_parse(q)
