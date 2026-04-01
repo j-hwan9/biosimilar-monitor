@@ -5,17 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biosimilar ASP Monitor — Samsung Bioepis</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Arial, sans-serif; background: #F0F4F8; color: #1a1a1a; }
 
-  /* 헤더 */
   .header { background: #003087; color: white; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
   .header h1 { font-size: 18px; font-weight: 700; }
   .header .sub { font-size: 12px; opacity: .75; margin-top: 3px; }
   .last-updated { font-size: 11px; opacity: .7; text-align: right; }
 
-  /* 필터 바 */
   .filter-bar { background: white; padding: 14px 32px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid #E0E0E0; box-shadow: 0 2px 4px rgba(0,0,0,.06); }
   .filter-bar label { font-size: 12px; font-weight: 600; color: #555; }
   .filter-bar select { padding: 6px 12px; border: 1px solid #D0D0D0; border-radius: 6px; font-size: 13px; background: white; cursor: pointer; }
@@ -23,17 +22,20 @@
   .badge-sb { background: #1565C0; color: white; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; }
   .badge-verify { background: #546E7A; color: white; padding: 2px 8px; border-radius: 10px; font-size: 10px; }
 
-  /* 메인 */
+  /* 다운로드 버튼 */
+  .dl-btn { margin-left: auto; background: #1B5E20; color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+  .dl-btn:hover { background: #2E7D32; }
+  .dl-btn svg { width: 14px; height: 14px; }
+
   .main { padding: 24px 32px; max-width: 1400px; margin: 0 auto; }
 
-  /* 카드 */
   .card { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.08); margin-bottom: 28px; overflow: hidden; }
   .card-header { padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
   .card-header h2 { font-size: 15px; font-weight: 700; color: white; }
   .card-header .meta { font-size: 11px; color: rgba(255,255,255,.8); margin-top: 2px; }
-  .card-body { padding: 0; }
+  .card-header .mol-dl-btn { background: rgba(255,255,255,.2); color: white; border: 1px solid rgba(255,255,255,.4); padding: 5px 12px; border-radius: 5px; font-size: 11px; cursor: pointer; font-weight: 600; }
+  .card-header .mol-dl-btn:hover { background: rgba(255,255,255,.35); }
 
-  /* 테이블 */
   .tbl-wrap { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 12px; }
   thead tr { background: #F0F4FA; }
@@ -43,13 +45,11 @@
   td:first-child { text-align: left; }
   tr:last-child td { border-bottom: none; }
 
-  /* 행 색상 */
   .row-orig { background: #FFF3F3; }
   .row-sb   { background: #E3F0FF; }
   .row-other{ background: white; }
   .row-other:nth-child(even) { background: #FAFAFA; }
 
-  /* 브랜드 셀 */
   .brand-cell { display: flex; flex-direction: column; }
   .brand-name { font-weight: 600; font-size: 12px; }
   .brand-suffix { font-size: 10px; color: #888; margin-top: 1px; }
@@ -57,26 +57,21 @@
   .tag-orig { background: #C62828; color: white; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 700; display: inline-block; margin-left: 5px; }
   .tag-sb   { background: #1565C0; color: white; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 700; display: inline-block; margin-left: 5px; }
 
-  /* ASP 셀 */
   .asp-val { font-weight: 700; font-size: 13px; }
   .asp-orig { color: #C62828; }
   .asp-sb   { color: #1565C0; }
   .asp-other{ color: #333; }
   .asp-na   { color: #CCC; font-weight: 400; }
-  .pl-val   { font-size: 10px; color: #AAA; display: block; margin-top: 1px; }
   .ira-badge { background: #F3E5F5; color: #6A1B9A; padding: 1px 5px; border-radius: 3px; font-size: 9px; font-weight: 700; display: inline-block; margin-left: 4px; }
   .chg-up   { color: #C62828; font-size: 10px; }
   .chg-dn   { color: #1565C0; font-size: 10px; }
 
-  /* 그래프 */
   .chart-wrap { padding: 20px 24px 16px; }
   .chart-wrap canvas { max-height: 320px; }
 
-  /* 로딩 */
   .loading { text-align: center; padding: 60px; color: #888; font-size: 14px; }
   .error   { text-align: center; padding: 40px; color: #C62828; font-size: 13px; }
 
-  /* 범례 */
   .legend-bar { padding: 10px 20px; background: #F8F9FA; border-top: 1px solid #EEE; font-size: 11px; color: #666; display: flex; gap: 20px; flex-wrap: wrap; }
   .leg-item { display: flex; align-items: center; gap: 5px; }
   .leg-dot  { width: 10px; height: 10px; border-radius: 50%; }
@@ -105,6 +100,14 @@
   </select>
   <span class="badge-sb">★ SB</span> Samsung Bioepis 제품
   <span class="badge-verify">검증용</span> 시장 검증 molecule
+
+  <!-- 전체 다운로드 버튼 -->
+  <button class="dl-btn" onclick="downloadAllExcel()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+    </svg>
+    전체 Excel 다운로드
+  </button>
 </div>
 
 <div class="main" id="mainContent">
@@ -112,7 +115,6 @@
 </div>
 
 <script>
-// ── 설정 ──────────────────────────────────────────────────
 const SB_MOLECULES  = ["Infliximab","Ranibizumab","Trastuzumab","Denosumab"];
 const CLINICAL_UNIT = {
   "Infliximab":"100mg/vial","Ranibizumab":"0.5mg/inj",
@@ -121,13 +123,12 @@ const CLINICAL_UNIT = {
   "Filgrastim":"300mcg/vial","Pegfilgrastim":"6mg/syringe",
   "Epoetin alfa":"40,000u/vial","Tocilizumab":"400mg/vial"
 };
-
 const CLR_ORIG  = "#C62828";
 const CLR_SB    = "#1565C0";
 const CLR_OTHER = ["#607D8B","#78909C","#90A4AE","#546E7A","#455A64","#37474F","#B0BEC5"];
 
-let globalData = {};   // {molecule: {quarters:[], products:[]}}
-let chartInst  = {};   // Chart.js 인스턴스
+let globalData = {};
+let chartInst  = {};
 
 // ── CSV 로드 ─────────────────────────────────────────────
 async function loadData() {
@@ -154,12 +155,8 @@ function parseCSV(text) {
     headers.forEach((h,i) => obj[h.trim()] = (vals[i]||"").trim());
     return obj;
   });
-
-  // 업데이트 시간
   document.getElementById("lastUpdated").textContent =
     "최종 업데이트: " + new Date().toLocaleDateString("ko-KR");
-
-  // molecule별 구조화
   globalData = {};
   rows.forEach(r => {
     const mol = r.molecule;
@@ -180,14 +177,13 @@ function parseCSV(text) {
       ira: r.ira === "True",
     };
   });
-
-  // 분기 정렬
   Object.values(globalData).forEach(m => {
     m.quarters = Array.from(m.quarters).sort((a,b) => {
       const toNum = s => {
-        const [y,q] = s.split(" Q");
-        const qmap = {"1 (Jan)":1,"2 (Apr)":2,"3 (Jul)":3,"4 (Oct)":4};
-        return parseInt(y)*10 + (qmap[q.trim()] || parseInt(q));
+        const yr = parseInt(s.split(" ")[0]);
+        const qmap = {"Q1 (Jan)":1,"Q2 (Apr)":2,"Q3 (Jul)":3,"Q4 (Oct)":4};
+        const qpart = s.split(" ").slice(1).join(" ");
+        return yr*10 + (qmap[qpart]||0);
       };
       return toNum(a) - toNum(b);
     });
@@ -197,7 +193,6 @@ function parseCSV(text) {
 function populateMolSelect() {
   const sel = document.getElementById("molSelect");
   sel.innerHTML = '<option value="ALL">전체 보기</option>';
-  // SB 먼저
   SB_MOLECULES.forEach(m => {
     if (globalData[m]) sel.innerHTML += `<option value="${m}">★ ${m}</option>`;
   });
@@ -208,45 +203,50 @@ function populateMolSelect() {
 }
 
 // ── 렌더링 ────────────────────────────────────────────────
+function getFilteredQuarters(mol) {
+  const qSel = document.getElementById("qSelect").value;
+  const md   = globalData[mol];
+  return qSel === "ALL" ? md.quarters : md.quarters.slice(-parseInt(qSel));
+}
+
 function renderAll() {
   const molSel = document.getElementById("molSelect").value;
-  const qSel   = document.getElementById("qSelect").value;
   const mols   = molSel === "ALL" ? Object.keys(globalData) : [molSel];
-
-  // 기존 차트 제거
   Object.values(chartInst).forEach(c => c.destroy());
   chartInst = {};
-
   const container = document.getElementById("mainContent");
   container.innerHTML = "";
-
   mols.forEach(mol => {
     if (!globalData[mol]) return;
-    const md = globalData[mol];
-    const quarters = qSel === "ALL" ? md.quarters :
-                     md.quarters.slice(-parseInt(qSel));
-    const hasSb = SB_MOLECULES.includes(mol);
-    container.appendChild(buildCard(mol, md, quarters, hasSb));
+    const quarters = getFilteredQuarters(mol);
+    const hasSb    = SB_MOLECULES.includes(mol);
+    container.appendChild(buildCard(mol, globalData[mol], quarters, hasSb));
   });
 }
 
 function buildCard(mol, md, quarters, hasSb) {
-  const unit   = CLINICAL_UNIT[mol] || "per unit";
-  const hdrBg  = hasSb ? "#003087" : "#37474F";
-  const prods  = Object.values(md.products);
-  const origP  = prods.find(p => p.is_orig);
-  const sbPs   = prods.filter(p => p.is_sb && !p.is_orig);
-  const otherPs= prods.filter(p => !p.is_orig && !p.is_sb);
-  const ordered= [origP, ...sbPs, ...otherPs].filter(Boolean);
+  const unit    = CLINICAL_UNIT[mol] || "per unit";
+  const hdrBg   = hasSb ? "#003087" : "#37474F";
+  const prods   = Object.values(md.products);
+  const origP   = prods.find(p => p.is_orig);
+  const sbPs    = prods.filter(p => p.is_sb && !p.is_orig);
+  const otherPs = prods.filter(p => !p.is_orig && !p.is_sb);
+  const ordered = [origP, ...sbPs, ...otherPs].filter(Boolean);
 
   const card = document.createElement("div");
   card.className = "card";
+  card.id = `card_${mol.replace(/ /g,'_')}`;
   card.innerHTML = `
     <div class="card-header" style="background:${hdrBg}">
       <div>
-        <h2>${mol} ${hasSb ? '<span style="background:rgba(255,255,255,.2);padding:1px 7px;border-radius:3px;font-size:10px;">★ Samsung Bioepis</span>' : '<span style="background:rgba(255,255,255,.15);padding:1px 7px;border-radius:3px;font-size:10px;">시장 검증용</span>'}</h2>
+        <h2>${mol} ${hasSb
+          ? '<span style="background:rgba(255,255,255,.2);padding:1px 7px;border-radius:3px;font-size:10px;">★ Samsung Bioepis</span>'
+          : '<span style="background:rgba(255,255,255,.15);padding:1px 7px;border-radius:3px;font-size:10px;">시장 검증용</span>'}</h2>
         <div class="meta">기준: ${unit} &nbsp;|&nbsp; ${quarters.length}개 분기 표시</div>
       </div>
+      <button class="mol-dl-btn" onclick="downloadMolExcel('${mol}')">
+        ⬇ Excel 다운로드
+      </button>
     </div>
     <div class="card-body">
       <div class="tbl-wrap">${buildTable(ordered, quarters)}</div>
@@ -258,30 +258,26 @@ function buildCard(mol, md, quarters, hasSb) {
       </div>
       <div class="chart-wrap"><canvas id="chart_${mol.replace(/ /g,'_')}"></canvas></div>
     </div>`;
-
-  // 차트 렌더 (setTimeout으로 DOM 삽입 후)
   setTimeout(() => buildChart(mol, ordered, quarters), 50);
   return card;
 }
 
 function buildTable(prods, quarters) {
   const qHeaders = quarters.map(q =>
-    `<th>${q.replace(" (Jan)","").replace(" (Apr)","").replace(" (Jul)","").replace(" (Oct)","")}</th>`
+    `<th>${q.replace(/ \(.*\)/,"")}</th>`
   ).join("");
-
-  const rows = prods.map((p, pi) => {
+  const rows = prods.map(p => {
     const rowClass = p.is_orig ? "row-orig" : (p.is_sb ? "row-sb" : "row-other");
-    const tag = p.is_orig ? '<span class="tag-orig">Originator</span>' :
-                (p.is_sb  ? '<span class="tag-sb">★ SB</span>' : "");
-
+    const tag = p.is_orig ? '<span class="tag-orig">Originator</span>'
+              : (p.is_sb  ? '<span class="tag-sb">★ SB</span>' : "");
     let prevAsp = null;
     const cells = quarters.map(q => {
       const d = p.data[q];
       if (!d || d.asp === null) return '<td><span class="asp-na">—</span></td>';
-
       const aspClass = p.is_orig ? "asp-orig" : (p.is_sb ? "asp-sb" : "asp-other");
-      const iraBadge = d.ira ? '<span class="ira-badge">+8%IRA</span>' : '<span style="font-size:9px;color:#bbb;">+6%</span>';
-
+      const iraBadge = d.ira
+        ? '<span class="ira-badge">+8%IRA</span>'
+        : '<span style="font-size:9px;color:#bbb;">+6%</span>';
       let chg = "";
       if (prevAsp !== null) {
         const pct = (d.asp - prevAsp) / prevAsp * 100;
@@ -289,25 +285,20 @@ function buildTable(prods, quarters) {
         else if (pct < -0.5) chg = `<span class="chg-dn">▼${Math.abs(pct).toFixed(1)}%</span>`;
       }
       prevAsp = d.asp;
-
       return `<td>
         <span class="asp-val ${aspClass}">$${d.asp.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>
         ${iraBadge} ${chg}
       </td>`;
     }).join("");
-
     return `<tr class="${rowClass}">
-      <td>
-        <div class="brand-cell">
-          <span class="brand-name">${p.brand}${tag}</span>
-          <span class="brand-suffix">${p.suffix}</span>
-          <span class="brand-co">${p.company}</span>
-        </div>
-      </td>
+      <td><div class="brand-cell">
+        <span class="brand-name">${p.brand}${tag}</span>
+        <span class="brand-suffix">${p.suffix}</span>
+        <span class="brand-co">${p.company}</span>
+      </div></td>
       ${cells}
     </tr>`;
   }).join("");
-
   return `<table>
     <thead><tr><th>Brand / HCPCS / Company</th>${qHeaders}</tr></thead>
     <tbody>${rows}</tbody>
@@ -315,22 +306,14 @@ function buildTable(prods, quarters) {
 }
 
 function buildChart(mol, prods, quarters) {
-  const canvasId = `chart_${mol.replace(/ /g,'_')}`;
-  const canvas   = document.getElementById(canvasId);
+  const canvas = document.getElementById(`chart_${mol.replace(/ /g,'_')}`);
   if (!canvas) return;
-
-  const qLabels = quarters.map(q =>
-    q.replace(" (Jan)","Q1").replace(" (Apr)","Q2")
-     .replace(" (Jul)","Q3").replace(" (Oct)","Q4")
-     .replace(" ","\\n"));
-
   let otherIdx = 0;
   const datasets = prods.map(p => {
     let color;
-    if (p.is_orig)     color = CLR_ORIG;
-    else if (p.is_sb)  color = CLR_SB;
-    else               color = CLR_OTHER[otherIdx++ % CLR_OTHER.length];
-
+    if (p.is_orig)    color = CLR_ORIG;
+    else if (p.is_sb) color = CLR_SB;
+    else              color = CLR_OTHER[otherIdx++ % CLR_OTHER.length];
     return {
       label: p.brand,
       data:  quarters.map(q => p.data[q]?.asp ?? null),
@@ -343,14 +326,13 @@ function buildChart(mol, prods, quarters) {
       spanGaps: true,
     };
   });
-
   chartInst[mol] = new Chart(canvas, {
     type: "line",
     data: { labels: quarters.map(q => q.replace(/ \(.*\)/,"")), datasets },
     options: {
       responsive: true,
       plugins: {
-        legend: { position: "bottom", labels: { font: { size: 10 }, boxWidth: 14, padding: 12 } },
+        legend: { position: "bottom", labels: { font:{size:10}, boxWidth:14, padding:12 } },
         tooltip: {
           callbacks: {
             label: ctx => `${ctx.dataset.label}: $${ctx.parsed.y?.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}) ?? "N/A"}`
@@ -358,20 +340,111 @@ function buildChart(mol, prods, quarters) {
         }
       },
       scales: {
-        x: { ticks: { font: { size: 9 }, maxRotation: 30 }, grid: { display: false } },
+        x: { ticks: { font:{size:9}, maxRotation:30 }, grid: { display:false } },
         y: {
-          ticks: {
-            font: { size: 9 },
-            callback: v => "$" + v.toLocaleString("en-US",{minimumFractionDigits:0})
-          },
-          grid: { color: "#F0F0F0" }
+          ticks: { font:{size:9}, callback: v => "$"+v.toLocaleString("en-US") },
+          grid: { color:"#F0F0F0" }
         }
       }
     }
   });
 }
 
-// 시작
+// ── Excel 다운로드 ────────────────────────────────────────
+function getMolData(mol) {
+  const md       = globalData[mol];
+  const quarters = getFilteredQuarters(mol);
+  const unit     = CLINICAL_UNIT[mol] || "per unit";
+  const prods    = Object.values(md.products);
+  const origP    = prods.find(p => p.is_orig);
+  const sbPs     = prods.filter(p => p.is_sb && !p.is_orig);
+  const otherPs  = prods.filter(p => !p.is_orig && !p.is_sb);
+  return { ordered: [origP,...sbPs,...otherPs].filter(Boolean), quarters, unit };
+}
+
+function buildSheetData(mol) {
+  const { ordered, quarters, unit } = getMolData(mol);
+
+  // 헤더 행
+  const header = ["Brand", "Type", "Company", "HCPCS", ...quarters.map(q => q.replace(/ \(.*\)/,""))];
+  const rows   = [header];
+
+  ordered.forEach(p => {
+    const type = p.is_orig ? "Originator" : (p.is_sb ? "Samsung Bioepis" : "Biosimilar");
+    const aspVals = quarters.map(q => {
+      const d = p.data[q];
+      return (d && d.asp !== null) ? d.asp : "";
+    });
+    rows.push([p.brand, type, p.company, p.suffix, ...aspVals]);
+  });
+
+  // 빈 행 + 메타
+  rows.push([]);
+  rows.push(["기준 단위", unit]);
+  rows.push(["생성 일시", new Date().toLocaleString("ko-KR")]);
+  rows.push(["Data Source", "CMS Medicare Part B ASP Pricing Files"]);
+  rows.push(["Note", "★IRA = IRA qualifying (+8% add-on 적용)"]);
+
+  return rows;
+}
+
+function applySheetStyle(ws, rows, mol) {
+  // 컬럼 너비
+  const ncols = rows[0].length;
+  ws['!cols'] = [
+    {wch:22}, {wch:16}, {wch:20}, {wch:12},
+    ...Array(ncols-4).fill({wch:13})
+  ];
+}
+
+function downloadMolExcel(mol) {
+  const wb   = XLSX.utils.book_new();
+  const rows = buildSheetData(mol);
+  const ws   = XLSX.utils.aoa_to_sheet(rows);
+  applySheetStyle(ws, rows, mol);
+  XLSX.utils.book_append_sheet(wb, ws, mol.slice(0,31));
+
+  const ts = new Date().toISOString().slice(0,10);
+  XLSX.writeFile(wb, `ASP_${mol.replace(/ /g,"_")}_${ts}.xlsx`);
+}
+
+function downloadAllExcel() {
+  const molSel = document.getElementById("molSelect").value;
+  const mols   = molSel === "ALL" ? Object.keys(globalData) : [molSel];
+  const wb     = XLSX.utils.book_new();
+
+  // 요약 시트
+  const summaryRows = [["Molecule","Brand","Type","Company","최근 ASP","분기","IRA"]];
+  mols.forEach(mol => {
+    const { ordered, quarters } = getMolData(mol);
+    const lastQ = quarters[quarters.length-1];
+    ordered.forEach(p => {
+      const d = p.data[lastQ];
+      const type = p.is_orig ? "Originator" : (p.is_sb ? "Samsung Bioepis" : "Biosimilar");
+      summaryRows.push([
+        mol, p.brand, type, p.company,
+        (d && d.asp !== null) ? d.asp : "",
+        lastQ?.replace(/ \(.*\)/,"") || "",
+        (d && d.ira) ? "+8% IRA" : "+6%"
+      ]);
+    });
+  });
+  const summaryWs = XLSX.utils.aoa_to_sheet(summaryRows);
+  summaryWs['!cols'] = [{wch:16},{wch:22},{wch:16},{wch:20},{wch:12},{wch:12},{wch:10}];
+  XLSX.utils.book_append_sheet(wb, summaryWs, "Summary");
+
+  // Molecule별 시트
+  mols.forEach(mol => {
+    const rows = buildSheetData(mol);
+    const ws   = XLSX.utils.aoa_to_sheet(rows);
+    applySheetStyle(ws, rows, mol);
+    XLSX.utils.book_append_sheet(wb, ws, mol.slice(0,31));
+  });
+
+  const ts = new Date().toISOString().slice(0,10);
+  XLSX.writeFile(wb, `Biosimilar_ASP_Report_${ts}.xlsx`);
+}
+
 loadData();
 </script>
 </body>
