@@ -930,17 +930,24 @@ def main():
             for i, r in enumerate(prod["asp_results"]):
                 if r is not None:
                     rows.append({
-                        "quarter":    mol_data["quarters"][i],
-                        "molecule":   mol_name,
-                        "brand":      prod["brand"],
-                        "company":    prod["company"],
-                        "is_sb":      prod["is_sb"],
-                        "is_orig":    prod["is_originator"],
-                        "asp":        round(r["asp"] * prod["mult"], 2),
-                        "addon_pct":  r["addon_pct"],
-                        "ira":        r.get("ira_qualifying", False),
-                        "hcpcs":      r.get("hcpcs", ""),
+                        "quarter":        mol_data["quarters"][i],
+                        "molecule":       mol_name,
+                        "product_type":   "Originator" if prod["is_originator"] else "Biosimilar",
+                        "brand":          prod["brand"],
+                        "suffix":         prod["suffix"],
+                        "company":        prod["company"],
+                        "is_sb":          prod["is_sb"],
+                        "is_orig":        prod["is_originator"],
+                        "hcpcs_code":     r.get("hcpcs", ""),
+                        "desc":           r.get("desc", ""),
+                        "payment_limit":  r["payment_limit"],
+                        "addon_pct":      r["addon_pct"],
+                        "ira_qualifying": r.get("ira_qualifying", False),
+                        "asp_per_unit":   round(r["asp"], 6),
+                        "asp":            round(r["asp"] * prod["mult"], 2),
+                        "notes":          r.get("notes", ""),
                     })
+
     with open("data/asp_data.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=rows[0].keys())
         writer.writeheader()
