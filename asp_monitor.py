@@ -543,7 +543,7 @@ def collect_asp_data(validation: dict) -> tuple:
         ok = "✅" if bd else "❌"
         print(f"  {ok} {q['label']}: {len(bd)}개 제품 매핑")
 
-    quarter_labels = [q["label"] for q in QUARTERS]
+    quarter_labels = [q["label"] for q in quarters]
     result = {}
 
     for mol_name, mol_info in MOLECULES.items():
