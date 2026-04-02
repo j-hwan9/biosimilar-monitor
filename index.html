@@ -174,7 +174,7 @@ function parseCSV(text) {
     globalData[mol].products[r.brand].data[r.quarter] = {
       asp: parseFloat(r.asp) || null,
       addon: parseInt(r.addon_pct) || 6,
-      ira: r.ira === "True",
+      ira: r.ira_qualifying === "True",
     };
   });
   Object.values(globalData).forEach(m => {
