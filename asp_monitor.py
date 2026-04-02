@@ -949,7 +949,8 @@ def main():
                     })
 
     with open("data/asp_data.csv", "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+        writer = csv.DictWriter(f, fieldnames=rows[0].keys(),
+                                 quoting=csv.QUOTE_ALL)
         writer.writeheader()
         writer.writerows(rows)
     print("✅ data/asp_data.csv 저장 완료")
