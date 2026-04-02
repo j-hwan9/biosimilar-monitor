@@ -101,7 +101,7 @@ jobs:
           git add data/asp_data.csv || true
           git add data/asp_report.xlsx || true
           git diff --staged --quiet || git commit -m "Update ASP data"
-          git push
+          git push || (git pull --rebase && git push)
 
       - name: Force save CSV on manual run
         if: steps.cms_check.outputs.should_run == 'false'
