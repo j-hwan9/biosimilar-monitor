@@ -159,7 +159,7 @@ MOLECULES = {
             {"brand": "Ixifi",      "suffix": "infliximab-qbtx",    "company": "Pfizer",          "is_sb": False,
              "desc_keywords": ["ixifi"],      "desc_exclude": [], "fda_name": "IXIFI"},
             {"brand": "Zymfentra",  "suffix": "infliximab-dyyb SC", "company": "Celltrion",       "is_sb": False,
-             "desc_keywords": ["zymfentra"],  "desc_exclude": [], "fda_name": "ZYMFENTRA"},
+             "desc_keywords": ["zymfentra", "j1748"],  "desc_exclude": [], "fda_name": "ZYMFENTRA"},
         ],
     },
     "Ranibizumab": {
