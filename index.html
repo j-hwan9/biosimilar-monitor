@@ -316,7 +316,7 @@ function buildChart(mol, prods, quarters) {
   const canvas   = document.getElementById(canvasId);
   if (!canvas) return;
   let otherIdx = 0;
-  const datasets = prods.map(p => {
+  const datasets = prods.filter(p => p.brand !== "Zymfentra").map(p => {
     let color;
     if (p.is_orig)    color = CLR_ORIG;
     else if (p.is_sb) color = CLR_SB;
